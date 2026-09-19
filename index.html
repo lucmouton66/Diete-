@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prise de Masse — 75 → 85kg</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>💪 Prise de Masse</h1>
+    <p class="subtitle">75kg → 85kg · Objectif avril · Muscu 5x/sem + Tennis</p>
+  </header>
+
+  <nav class="main-nav">
+    <button class="nav-btn active" data-view="view-plan">Plan alimentaire</button>
+    <button class="nav-btn" data-view="view-weight">Suivi de poids</button>
+    <button class="nav-btn" data-view="view-shopping">Liste de courses</button>
+    <button class="nav-btn" data-view="view-infos">Infos & conseils</button>
+  </nav>
+
+  <main>
+    <!-- ============ PLAN ALIMENTAIRE ============ -->
+    <section id="view-plan" class="view active">
+      <div class="day-tabs">
+        <button class="day-tab active" data-day="training">Jour d'entraînement</button>
+        <button class="day-tab" data-day="rest">Jour de repos</button>
+      </div>
+
+      <div id="day-total"></div>
+      <div id="meals-container" class="meals-container"></div>
+    </section>
+
+    <!-- ============ SUIVI DE POIDS ============ -->
+    <section id="view-weight" class="view">
+      <h2>Suivi de poids</h2>
+
+      <form id="weight-form" class="weight-form">
+        <div class="field">
+          <label for="weight-date">Date</label>
+          <input type="date" id="weight-date" required />
+        </div>
+        <div class="field">
+          <label for="weight-value">Poids (kg)</label>
+          <input type="number" id="weight-value" step="0.1" min="30" max="200" placeholder="ex: 75.4" required />
+        </div>
+        <button type="submit">Enregistrer</button>
+      </form>
+
+      <div class="field goal-field">
+        <label for="goal-date">Date objectif (85kg)</label>
+        <input type="date" id="goal-date" />
+      </div>
+
+      <div id="weight-stats" class="weight-stats"></div>
+      <p id="weight-advice" class="advice"></p>
+
+      <div id="weight-chart" class="weight-chart"></div>
+
+      <details class="log-details">
+        <summary>Historique des pesées</summary>
+        <table id="weight-log-table">
+          <thead><tr><th>Date</th><th>Poids</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <button id="clear-log" class="danger-btn">Effacer l'historique</button>
+      </details>
+    </section>
+
+    <!-- ============ LISTE DE COURSES ============ -->
+    <section id="view-shopping" class="view">
+      <h2>Liste de courses (semaine type : 6 jours entraînement + 1 repos)</h2>
+      <ul id="shopping-list" class="shopping-list"></ul>
+    </section>
+
+    <!-- ============ INFOS ============ -->
+    <section id="view-infos" class="view">
+      <h2>Pourquoi ce plan ?</h2>
+      <div class="info-block">
+        <h3>Objectif calorique</h3>
+        <p>Pour prendre du muscle avec un minimum de gras, il faut un <strong>léger surplus calorique</strong> (~300-500 kcal au-dessus de ta dépense) plutôt qu'un excès massif. Ce plan vise environ <strong>3100-3300 kcal les jours d'entraînement</strong> et <strong>2600-2900 kcal les jours de repos</strong> — cette variation ("carb cycling" léger) limite la prise de gras les jours peu actifs.</p>
+      </div>
+      <div class="info-block">
+        <h3>Protéines</h3>
+        <p>Environ <strong>2 à 2.7g par kg de poids de corps</strong>, réparties sur 6-7 prises dans la journée (dont la whey en poudre) pour maximiser la synthèse musculaire. À 75-85kg, cela représente ~180-230g/jour.</p>
+      </div>
+      <div class="info-block">
+        <h3>Glucides</h3>
+        <p>Volontairement élevés (riz, avoine, patate douce, fruits) car tu t'entraînes 5-6x/semaine (muscu + tennis) : les glucides sont ton carburant principal et permettent de mieux récupérer entre les séances.</p>
+      </div>
+      <div class="info-block">
+        <h3>Timing</h3>
+        <p>Collation glucidique ~1h30 avant l'entraînement, shaker de whey dans les 30-45 min après (fenêtre anabolique), et une source de protéines lente (skyr/fromage blanc) avant le coucher pour la récupération nocturne.</p>
+      </div>
+      <div class="info-block">
+        <h3>Whey / protéine en poudre</h3>
+        <p>Utile pour atteindre facilement tes besoins en protéines sans devoir manger 6 blancs de poulet par jour. Ce n'est pas obligatoire — tu peux remplacer un shaker par 2 œufs + 100g de skyr si tu préfères manger "vrai".</p>
+      </div>
+      <div class="info-block">
+        <h3>Suivi</h3>
+        <p>Pèse-toi 1 à 2 fois par semaine, toujours dans les mêmes conditions (à jeun, au réveil). L'onglet "Suivi de poids" calcule automatiquement si ton rythme est cohérent avec l'objectif du mois d'avril, et t'alerte si tu prends du poids trop vite (= trop de gras) ou trop lentement.</p>
+      </div>
+      <div class="info-block">
+        <h3>Ajustements</h3>
+        <p>Si après 2 semaines ton poids ne bouge pas assez, augmente les portions de riz/avoine de 20-30g par repas plutôt que d'ajouter des aliments gras/sucrés. Si tu prends trop vite, réduis légèrement l'huile d'olive et les collations.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
