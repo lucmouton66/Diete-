@@ -15,7 +15,7 @@ const FOODS = {
   chicken:     { name: "Blanc/cuisse de poulet (cuit)",    unit: "g",  kcal: 165, p: 31,   c: 0,   f: 3.6 },
   veggies:     { name: "Légumes surgelés (mélange)",       unit: "g",  kcal: 32,  p: 2,    c: 5.5, f: 0.3 },
   oliveoil:    { name: "Huile (olive ou colza)",          unit: "g",  kcal: 884, p: 0,    c: 0,   f: 100 },
-  whey:        { name: "Whey protéine (poudre)",          unit: "g",  kcal: 380, p: 75,   c: 8,   f: 5 },
+  whey:        { name: "Whey Isolate Decathlon (poudre)", unit: "g",  kcal: 379, p: 81,   c: 11,  f: 1 },
   apple:       { name: "Pomme",                           unit: "g",  kcal: 52,  p: 0.3,  c: 14,  f: 0.2 },
   honey:       { name: "Miel ou confiture",               unit: "g",  kcal: 304, p: 0.3,  c: 82,  f: 0 },
   tuna:        { name: "Thon au naturel (boîte, égoutté)", unit: "g", kcal: 116, p: 26,   c: 0,   f: 1 },
