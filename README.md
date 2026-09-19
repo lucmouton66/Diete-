@@ -22,10 +22,12 @@ Fonctionne aussi hébergée gratuitement (GitHub Pages, Netlify, Vercel...).
 
 ## Repères nutritionnels du plan
 
-- Jour d'entraînement (muscu/tennis) : ~3200 kcal, ~230g protéines, ~380g glucides, ~90g lipides
-- Jour de repos : ~2600 kcal, ~200g protéines, ~290g glucides, ~77g lipides
+Calculés pour un profil de 75kg, 1m81, 22 ans, ~17-18% de masse grasse, actif (muscu 5x/semaine + tennis) : métabolisme de base ~1740 kcal (moyenne Mifflin-St Jeor / Katch-McArdle), maintien ~2870 kcal/jour avec l'activité.
 
-Ces valeurs sont volontairement légèrement plus riches en glucides et calories les jours d'entraînement pour soutenir 5 séances de musculation + tennis par semaine, tout en limitant la prise de gras les jours peu actifs.
+- Jour d'entraînement (muscu/tennis) : ~3290 kcal, ~186g protéines, ~446g glucides, ~88g lipides (surplus de ~400 kcal)
+- Jour de repos : ~3000 kcal, ~172g protéines, ~413g glucides, ~77g lipides (proche du maintien)
+
+Protéines volontairement gardées entre 150 et 200g/jour (~2-2.4g/kg) — suffisant pour la synthèse musculaire sans excès inutile. Les glucides sont volontairement élevés pour soutenir les séances et la récupération, avec un léger surplus calorique pour limiter la prise de gras.
 
 ## Personnaliser le plan
 
