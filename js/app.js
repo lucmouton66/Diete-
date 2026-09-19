@@ -94,7 +94,9 @@ function renderMealPlan() {
   });
 
   if (nextCard) {
-    nextCard.scrollIntoView({ behavior: "auto", block: "center" });
+    setTimeout(() => {
+      nextCard.scrollIntoView({ block: "center" });
+    }, 100);
   }
 
   const dayTotal = sumMacros(dayMacros);
