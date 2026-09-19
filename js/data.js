@@ -23,156 +23,89 @@ const FOODS = {
 };
 
 // ===================================================================
-// Plans de repas — quantités en grammes (ou ml)
-// "training" = jour de muscu et/ou tennis (majorité des jours)
-// "rest"     = jour de repos complet
+// Plan de repas unique — même chose tous les jours (7j/7), y compris
+// les jours de repos : pas besoin de gérer deux menus différents.
+// Quantités en grammes (ou ml).
 //
 // Pensé pour un budget étudiant et un minimum de temps en cuisine :
 // - aliments simples, bon marché, faciles à trouver en promo/marque repère
 // - cuisson en lot 1-2x/semaine (riz + poulet) pour n'avoir qu'à réchauffer
 // - repas "zéro cuisson" (thon, skyr, whey, flocons) pour les jours pressés
 // ===================================================================
-const MEAL_PLANS = {
-  training: {
-    label: "Jour d'entraînement (muscu / tennis)",
-    meals: [
-      {
-        name: "Petit-déjeuner",
-        time: "7h00",
-        items: [
-          { food: "oats", qty: 100 },
-          { food: "milk", qty: 330 },
-          { food: "eggs", qty: 100 },
-          { food: "banana", qty: 120 },
-          { food: "peanutbutter", qty: 20 },
-        ],
-        note: "3-4 min : flocons + lait chaud au micro-ondes (2 min), 2 œufs à la poêle en même temps.",
-      },
-      {
-        name: "Collation matin",
-        time: "10h00",
-        items: [
-          { food: "skyr", qty: 150 },
-          { food: "peanutbutter", qty: 15 },
-        ],
-        note: "Zéro cuisson, à emporter facilement (pot de skyr + cuillère de beurre de cacahuète).",
-      },
-      {
-        name: "Déjeuner",
-        time: "12h30",
-        items: [
-          { food: "rice", qty: 185 },
-          { food: "chicken", qty: 80 },
-          { food: "veggies", qty: 150 },
-          { food: "oliveoil", qty: 15 },
-        ],
-        note: "Cuis le riz + le poulet en grande quantité 1-2x/semaine (dimanche + mercredi par ex.), garde au frigo en tupperware : ici juste 2 min de micro-ondes. Légumes surgelés directement à la poêle/micro-ondes, pas de découpe.",
-      },
-      {
-        name: "Collation pré-entraînement",
-        time: "16h00",
-        items: [
-          { food: "oats", qty: 30 },
-          { food: "milk", qty: 250 },
-          { food: "apple", qty: 200 },
-        ],
-        note: "Zéro cuisson : flocons + lait froid (pas besoin de chauffer) + une pomme.",
-      },
-      {
-        name: "Shaker post-entraînement",
-        time: "18h30",
-        items: [
-          { food: "whey", qty: 25 },
-          { food: "banana", qty: 160 },
-          { food: "honey", qty: 15 },
-        ],
-        note: "Zéro cuisson, 1 min chrono : whey + eau dans le shaker, banane à côté.",
-      },
-      {
-        name: "Dîner",
-        time: "20h30",
-        items: [
-          { food: "potato", qty: 280 },
-          { food: "tuna", qty: 120 },
-          { food: "veggies", qty: 200 },
-          { food: "oliveoil", qty: 15 },
-        ],
-        note: "Version zéro cuisson : pommes de terre déjà cuites en lot (ou riz restant du déjeuner) + thon en boîte + légumes surgelés réchauffés. 2x/semaine, remplace le thon par un steak haché 5% (poêle, 5 min) ou un pavé de poisson surgelé (four, 15-20 min sans surveillance) pour varier.",
-      },
-      {
-        name: "Avant coucher",
-        time: "22h00",
-        items: [
-          { food: "skyr", qty: 150 },
-          { food: "honey", qty: 10 },
-        ],
-        note: "Zéro cuisson. Protéine lente pour la nuit (récupération musculaire pendant le sommeil).",
-      },
-    ],
-  },
-  rest: {
-    label: "Jour de repos complet",
-    meals: [
-      {
-        name: "Petit-déjeuner",
-        time: "8h00",
-        items: [
-          { food: "oats", qty: 100 },
-          { food: "milk", qty: 300 },
-          { food: "eggs", qty: 50 },
-          { food: "banana", qty: 120 },
-        ],
-      },
-      {
-        name: "Collation matin",
-        time: "10h30",
-        items: [
-          { food: "skyr", qty: 130 },
-          { food: "peanutbutter", qty: 15 },
-        ],
-      },
-      {
-        name: "Déjeuner",
-        time: "13h00",
-        items: [
-          { food: "rice", qty: 190 },
-          { food: "chicken", qty: 100 },
-          { food: "veggies", qty: 150 },
-          { food: "oliveoil", qty: 20 },
-        ],
-        note: "Reste du riz/poulet cuit en lot — juste à réchauffer.",
-      },
-      {
-        name: "Collation après-midi",
-        time: "16h30",
-        items: [
-          { food: "skyr", qty: 120 },
-          { food: "apple", qty: 180 },
-          { food: "banana", qty: 150 },
-        ],
-      },
-      {
-        name: "Dîner",
-        time: "20h00",
-        items: [
-          { food: "potato", qty: 230 },
-          { food: "tuna", qty: 150 },
-          { food: "veggies", qty: 200 },
-          { food: "oliveoil", qty: 20 },
-        ],
-        note: "Zéro cuisson : pommes de terre déjà cuites + thon + légumes surgelés réchauffés.",
-      },
-      {
-        name: "Avant coucher",
-        time: "22h00",
-        items: [
-          { food: "skyr", qty: 150 },
-          { food: "honey", qty: 10 },
-        ],
-      },
-    ],
-  },
+const MEAL_PLAN = {
+  label: "Plan quotidien (identique tous les jours)",
+  meals: [
+    {
+      name: "Petit-déjeuner",
+      time: "7h00",
+      items: [
+        { food: "oats", qty: 100 },
+        { food: "milk", qty: 330 },
+        { food: "eggs", qty: 100 },
+        { food: "banana", qty: 120 },
+        { food: "peanutbutter", qty: 20 },
+      ],
+      note: "3-4 min : flocons + lait chaud au micro-ondes (2 min), 2 œufs à la poêle en même temps.",
+    },
+    {
+      name: "Collation matin",
+      time: "10h00",
+      items: [
+        { food: "skyr", qty: 150 },
+        { food: "peanutbutter", qty: 15 },
+      ],
+      note: "Zéro cuisson, à emporter facilement (pot de skyr + cuillère de beurre de cacahuète).",
+    },
+    {
+      name: "Déjeuner",
+      time: "12h30",
+      items: [
+        { food: "rice", qty: 185 },
+        { food: "chicken", qty: 80 },
+        { food: "veggies", qty: 150 },
+        { food: "oliveoil", qty: 15 },
+      ],
+      note: "Cuis le riz + le poulet en grande quantité 1-2x/semaine (dimanche + mercredi par ex.), garde au frigo en tupperware : ici juste 2 min de micro-ondes. Légumes surgelés directement à la poêle/micro-ondes, pas de découpe.",
+    },
+    {
+      name: "Collation pré-entraînement",
+      time: "16h00",
+      items: [
+        { food: "oats", qty: 30 },
+        { food: "milk", qty: 250 },
+        { food: "apple", qty: 200 },
+      ],
+      note: "Zéro cuisson : flocons + lait froid (pas besoin de chauffer) + une pomme.",
+    },
+    {
+      name: "Shaker post-entraînement",
+      time: "18h30",
+      items: [
+        { food: "whey", qty: 25 },
+        { food: "banana", qty: 160 },
+        { food: "honey", qty: 15 },
+      ],
+      note: "Zéro cuisson, 1 min chrono : whey + eau dans le shaker, banane à côté. Les jours sans entraînement, prends-le simplement en collation à la même heure.",
+    },
+    {
+      name: "Dîner",
+      time: "20h30",
+      items: [
+        { food: "potato", qty: 280 },
+        { food: "tuna", qty: 120 },
+        { food: "veggies", qty: 200 },
+        { food: "oliveoil", qty: 15 },
+      ],
+      note: "Version zéro cuisson : pommes de terre déjà cuites en lot (ou riz restant du déjeuner) + thon en boîte + légumes surgelés réchauffés. 2x/semaine, remplace le thon par un steak haché 5% (poêle, 5 min) ou un pavé de poisson surgelé (four, 15-20 min sans surveillance) pour varier.",
+    },
+    {
+      name: "Avant coucher",
+      time: "22h00",
+      items: [
+        { food: "skyr", qty: 150 },
+        { food: "honey", qty: 10 },
+      ],
+      note: "Zéro cuisson. Protéine lente pour la nuit (récupération musculaire pendant le sommeil).",
+    },
+  ],
 };
-
-// Répartition par défaut de la semaine (5 muscu + tennis "à côté" ≈ 6 jours actifs)
-const WEEK_DEFAULT = ["training", "training", "training", "training", "training", "training", "rest"];

@@ -31,8 +31,8 @@ function fmt(n, d = 0) {
 // ===================================================================
 // Rendu du plan alimentaire
 // ===================================================================
-function renderMealPlan(dayType) {
-  const plan = MEAL_PLANS[dayType];
+function renderMealPlan() {
+  const plan = MEAL_PLAN;
   const container = document.getElementById("meals-container");
   container.innerHTML = "";
 
@@ -82,21 +82,6 @@ function renderMealPlan(dayType) {
       <div><span>${fmt(dayTotal.f)}g</span><small>Lipides</small></div>
     </div>
   `;
-}
-
-// ===================================================================
-// Onglets jour d'entraînement / repos
-// ===================================================================
-function initDayTabs() {
-  const tabs = document.querySelectorAll(".day-tab");
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach((t) => t.classList.remove("active"));
-      tab.classList.add("active");
-      renderMealPlan(tab.dataset.day);
-    });
-  });
-  renderMealPlan("training");
 }
 
 // ===================================================================
@@ -284,15 +269,15 @@ function renderWeightLogTable(sorted) {
 }
 
 // ===================================================================
-// Liste de courses (agrégation sur la semaine WEEK_DEFAULT)
+// Liste de courses (le même plan répété sur 7 jours)
 // ===================================================================
+const DAYS_PER_WEEK = 7;
+
 function renderShoppingList() {
   const totals = {};
-  WEEK_DEFAULT.forEach((dayType) => {
-    MEAL_PLANS[dayType].meals.forEach((meal) => {
-      meal.items.forEach((item) => {
-        totals[item.food] = (totals[item.food] || 0) + item.qty;
-      });
+  MEAL_PLAN.meals.forEach((meal) => {
+    meal.items.forEach((item) => {
+      totals[item.food] = (totals[item.food] || 0) + item.qty * DAYS_PER_WEEK;
     });
   });
 
@@ -329,7 +314,7 @@ function initNav() {
 // ===================================================================
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
-  initDayTabs();
+  renderMealPlan();
   initWeightTracker();
   renderShoppingList();
 });

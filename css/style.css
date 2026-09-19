@@ -53,18 +53,7 @@ main { max-width: 720px; margin: 0 auto; padding: 0 16px 60px; }
 .view.active { display: block; animation: fadeIn 0.2s ease; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-.day-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
-.day-tab {
-  flex: 1;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text);
-  padding: 10px;
-  border-radius: var(--radius);
-  cursor: pointer;
-  font-size: 0.85rem;
-}
-.day-tab.active { background: var(--accent); border-color: var(--accent); color: #05201d; font-weight: 600; }
+.plan-subtitle { color: var(--muted); font-size: 0.85rem; margin: 0 0 16px; }
 
 .total-box {
   display: grid;
