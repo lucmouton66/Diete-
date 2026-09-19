@@ -28,6 +28,18 @@ function fmt(n, d = 0) {
   return n.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
+function timeToMinutes(timeStr) {
+  const [h, m] = timeStr.replace("h", ":").split(":").map(Number);
+  return h * 60 + (m || 0);
+}
+
+function nextMealIndex(meals) {
+  const nowMinutes = new Date().getHours() * 60 + new Date().getMinutes();
+  const withIndex = meals.map((meal, i) => ({ i, minutes: timeToMinutes(meal.time) }));
+  const upcoming = withIndex.find((m) => m.minutes > nowMinutes);
+  return upcoming ? upcoming.i : withIndex[0].i;
+}
+
 // ===================================================================
 // Rendu du plan alimentaire
 // ===================================================================
@@ -37,14 +49,21 @@ function renderMealPlan() {
   container.innerHTML = "";
 
   const dayMacros = [];
+  const nextIndex = nextMealIndex(plan.meals);
+  let nextCard = null;
 
-  plan.meals.forEach((meal) => {
+  plan.meals.forEach((meal, index) => {
     const itemMacros = meal.items.map(computeItemMacros);
     const mealTotal = sumMacros(itemMacros);
     dayMacros.push(mealTotal);
 
     const card = document.createElement("div");
     card.className = "meal-card";
+    if (index === nextIndex) {
+      card.className += " meal-card--next";
+      card.id = "next-meal";
+      nextCard = card;
+    }
 
     const itemsHtml = meal.items
       .map((item, i) => {
@@ -63,6 +82,7 @@ function renderMealPlan() {
         <h3>${meal.name}</h3>
         <span class="meal-time">${meal.time}</span>
       </div>
+      ${index === nextIndex ? `<span class="next-badge">Prochain repas</span>` : ""}
       <ul class="item-list">${itemsHtml}</ul>
       ${meal.note ? `<p class="meal-note">${meal.note}</p>` : ""}
       <div class="meal-total">
@@ -72,6 +92,10 @@ function renderMealPlan() {
     `;
     container.appendChild(card);
   });
+
+  if (nextCard) {
+    nextCard.scrollIntoView({ behavior: "auto", block: "center" });
+  }
 
   const dayTotal = sumMacros(dayMacros);
   document.getElementById("day-total").innerHTML = `
