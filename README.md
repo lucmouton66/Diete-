@@ -15,35 +15,58 @@ Fonctionne aussi hébergée gratuitement (GitHub Pages, Netlify, Vercel...).
 
 ## Fonctionnalités
 
-- **Plan alimentaire** : 2 types de jours (entraînement / repos), 6-7 repas détaillés avec quantités exactes en grammes et calcul automatique des calories/macros par repas et par jour.
+- **Plan alimentaire** : un seul menu, identique tous les jours (entraînement ou repos), 7 repas détaillés avec quantités exactes en grammes et calcul automatique des calories/macros par repas et pour la journée. Pensé pour un budget étudiant et peu de temps en cuisine (aliments simples, batch cooking, repas zéro cuisson).
 - **Suivi de poids** : enregistrement des pesées (stocké dans le navigateur), calcul du rythme de prise de poids nécessaire pour atteindre 85kg à la date objectif, comparaison avec le rythme réel, graphique d'évolution, et conseils automatiques (trop vite = trop de gras, trop lent = augmenter les portions).
-- **Liste de courses** : quantités hebdomadaires agrégées automatiquement à partir du plan (base : 6 jours d'entraînement + 1 jour de repos).
-- **Infos & conseils** : explication du raisonnement nutritionnel (calories, protéines, glucides, timing, whey, ajustements).
+- **Liste de courses** : quantités hebdomadaires agrégées automatiquement (le plan × 7 jours).
+- **Infos & conseils** : explication du raisonnement nutritionnel (calories, protéines, glucides, timing, whey, budget, ajustements).
+- **Widget "prochain repas"** (iPhone) : script Scriptable optionnel qui affiche le prochain repas en widget écran d'accueil ou écran verrouillé — voir [Widget iPhone](#widget-iphone-prochain-repas).
 
 ## Repères nutritionnels du plan
 
 Calculés pour un profil de 75kg, 1m81, 22 ans, ~17-18% de masse grasse, actif (muscu 5x/semaine + tennis) : métabolisme de base ~1740 kcal (moyenne Mifflin-St Jeor / Katch-McArdle), maintien ~2870 kcal/jour avec l'activité.
 
-- Jour d'entraînement (muscu/tennis) : ~3290 kcal, ~186g protéines, ~446g glucides, ~88g lipides (surplus de ~400 kcal)
-- Jour de repos : ~3000 kcal, ~172g protéines, ~413g glucides, ~77g lipides (proche du maintien)
+- **~3370 kcal/jour**, ~196g protéines, ~459g glucides, ~87g lipides (surplus de ~400-500 kcal), appliqué tous les jours de la semaine
 
-Protéines volontairement gardées entre 150 et 200g/jour (~2-2.4g/kg) — suffisant pour la synthèse musculaire sans excès inutile. Les glucides sont volontairement élevés pour soutenir les séances et la récupération, avec un léger surplus calorique pour limiter la prise de gras.
+Protéines volontairement gardées entre 150 et 200g/jour (~2-2.4g/kg) — suffisant pour la synthèse musculaire sans excès inutile. Les glucides sont volontairement élevés pour soutenir les séances et la récupération.
 
 ## Personnaliser le plan
 
 Toutes les données (aliments et repas) sont centralisées dans `js/data.js` :
 - `FOODS` : base de données nutritionnelle (kcal/protéines/glucides/lipides pour 100g de chaque aliment)
-- `MEAL_PLANS` : composition des repas par type de jour (aliment + quantité en grammes)
+- `MEAL_PLAN` : composition des 7 repas de la journée (aliment + quantité en grammes)
 
 Modifie simplement les quantités ou remplace un aliment par un autre déjà présent dans `FOODS` (ou ajoute-en un nouveau avec ses valeurs pour 100g) — tous les calculs (macros par repas, totaux journaliers, liste de courses) se recalculent automatiquement.
+
+Si tu modifies `js/data.js`, régénère aussi `meals.json` (utilisé par le widget iPhone) :
+
+```bash
+node scripts/generate-meals-json.js
+```
+
+## Widget iPhone (prochain repas)
+
+Pour afficher le prochain repas directement en widget (écran d'accueil ou écran verrouillé), sans ouvrir l'appli :
+
+1. Installe l'app gratuite **Scriptable** (App Store)
+2. Ouvre-la, appuie sur **+** pour créer un nouveau script
+3. Colle le contenu de [`scriptable/diete-widget.js`](scriptable/diete-widget.js), renomme le script (ex: "Diète")
+4. Sauvegarde (flèche retour en haut à gauche)
+5. Ajoute le widget :
+   - **Écran d'accueil** : appui long sur l'écran → **+** → cherche "Scriptable" → choisis la taille (small/medium) → une fois ajouté, appuie dessus → sélectionne le script "Diète"
+   - **Écran verrouillé** : appui long sur l'écran verrouillé → **Personnaliser** → **Widgets** → cherche "Scriptable" → choisis-le → sélectionne le script "Diète"
+
+Le widget va chercher `meals.json` sur GitHub Pages et affiche automatiquement le nom, l'heure et les aliments du prochain repas selon l'heure actuelle.
 
 ## Structure du projet
 
 ```
-index.html       Structure de la page
-css/style.css    Style (thème sombre, mobile-friendly)
-js/data.js       Base d'aliments + plans de repas
-js/app.js        Logique : calculs macros, suivi de poids, liste de courses
+index.html                    Structure de la page
+css/style.css                 Style (thème sombre, mobile-friendly)
+js/data.js                    Base d'aliments + plan de repas
+js/app.js                     Logique : calculs macros, suivi de poids, liste de courses
+meals.json                    Export du plan (utilisé par le widget iPhone)
+scripts/generate-meals-json.js  Régénère meals.json à partir de js/data.js
+scriptable/diete-widget.js     Script du widget "prochain repas" (app Scriptable)
 ```
 
 ## Avertissement

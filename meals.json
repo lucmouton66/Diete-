@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Petit-déjeuner",
+    "time": "7h00",
+    "kcal": 910,
+    "items": [
+      {
+        "name": "Flocons d'avoine",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Lait demi-écrémé",
+        "qty": 330,
+        "unit": "ml"
+      },
+      {
+        "name": "Œufs entiers",
+        "qty": 100,
+        "unit": "g"
+      },
+      {
+        "name": "Banane",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "Beurre de cacahuète",
+        "qty": 20,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Collation matin",
+    "time": "10h00",
+    "kcal": 183,
+    "items": [
+      {
+        "name": "Skyr / fromage blanc 0% (nature)",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Beurre de cacahuète",
+        "qty": 15,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Déjeuner",
+    "time": "12h30",
+    "kcal": 960,
+    "items": [
+      {
+        "name": "Riz (cru)",
+        "qty": 185,
+        "unit": "g"
+      },
+      {
+        "name": "Blanc/cuisse de poulet (cuit)",
+        "qty": 80,
+        "unit": "g"
+      },
+      {
+        "name": "Légumes surgelés (mélange)",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Huile (olive ou colza)",
+        "qty": 15,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Collation pré-entraînement",
+    "time": "16h00",
+    "kcal": 334,
+    "items": [
+      {
+        "name": "Flocons d'avoine",
+        "qty": 30,
+        "unit": "g"
+      },
+      {
+        "name": "Lait demi-écrémé",
+        "qty": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "Pomme",
+        "qty": 200,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Shaker post-entraînement",
+    "time": "18h30",
+    "kcal": 283,
+    "items": [
+      {
+        "name": "Whey protéine (poudre)",
+        "qty": 25,
+        "unit": "g"
+      },
+      {
+        "name": "Banane",
+        "qty": 160,
+        "unit": "g"
+      },
+      {
+        "name": "Miel ou confiture",
+        "qty": 15,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Dîner",
+    "time": "20h30",
+    "kcal": 579,
+    "items": [
+      {
+        "name": "Pomme de terre (cuite)",
+        "qty": 280,
+        "unit": "g"
+      },
+      {
+        "name": "Thon au naturel (boîte, égoutté)",
+        "qty": 120,
+        "unit": "g"
+      },
+      {
+        "name": "Légumes surgelés (mélange)",
+        "qty": 200,
+        "unit": "g"
+      },
+      {
+        "name": "Huile (olive ou colza)",
+        "qty": 15,
+        "unit": "g"
+      }
+    ]
+  },
+  {
+    "name": "Avant coucher",
+    "time": "22h00",
+    "kcal": 125,
+    "items": [
+      {
+        "name": "Skyr / fromage blanc 0% (nature)",
+        "qty": 150,
+        "unit": "g"
+      },
+      {
+        "name": "Miel ou confiture",
+        "qty": 10,
+        "unit": "g"
+      }
+    ]
+  }
+]
