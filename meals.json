@@ -6,28 +6,23 @@
     "items": [
       {
         "name": "Flocons d'avoine",
-        "qty": 100,
-        "unit": "g"
+        "display": "100g"
       },
       {
         "name": "Lait demi-écrémé",
-        "qty": 330,
-        "unit": "ml"
+        "display": "330ml"
       },
       {
         "name": "Œufs entiers",
-        "qty": 100,
-        "unit": "g"
+        "display": "2 œufs"
       },
       {
         "name": "Banane",
-        "qty": 120,
-        "unit": "g"
+        "display": "1 banane"
       },
       {
         "name": "Beurre de cacahuète",
-        "qty": 20,
-        "unit": "g"
+        "display": "20g"
       }
     ]
   },
@@ -38,13 +33,11 @@
     "items": [
       {
         "name": "Skyr / fromage blanc 0% (nature)",
-        "qty": 150,
-        "unit": "g"
+        "display": "150g"
       },
       {
         "name": "Beurre de cacahuète",
-        "qty": 15,
-        "unit": "g"
+        "display": "15g"
       }
     ]
   },
@@ -55,23 +48,19 @@
     "items": [
       {
         "name": "Riz (cru)",
-        "qty": 185,
-        "unit": "g"
+        "display": "185g"
       },
       {
         "name": "Blanc/cuisse de poulet (cuit)",
-        "qty": 80,
-        "unit": "g"
+        "display": "80g"
       },
       {
         "name": "Légumes surgelés (mélange)",
-        "qty": 150,
-        "unit": "g"
+        "display": "150g"
       },
       {
         "name": "Huile (olive ou colza)",
-        "qty": 15,
-        "unit": "g"
+        "display": "15g"
       }
     ]
   },
@@ -82,18 +71,15 @@
     "items": [
       {
         "name": "Flocons d'avoine",
-        "qty": 30,
-        "unit": "g"
+        "display": "30g"
       },
       {
         "name": "Lait demi-écrémé",
-        "qty": 250,
-        "unit": "ml"
+        "display": "250ml"
       },
       {
         "name": "Pomme",
-        "qty": 200,
-        "unit": "g"
+        "display": "1 pomme"
       }
     ]
   },
@@ -104,18 +90,15 @@
     "items": [
       {
         "name": "Whey Isolate Decathlon (poudre)",
-        "qty": 25,
-        "unit": "g"
+        "display": "25g"
       },
       {
         "name": "Banane",
-        "qty": 160,
-        "unit": "g"
+        "display": "1½ bananes"
       },
       {
         "name": "Miel ou confiture",
-        "qty": 15,
-        "unit": "g"
+        "display": "15g"
       }
     ]
   },
@@ -126,23 +109,19 @@
     "items": [
       {
         "name": "Pomme de terre (cuite)",
-        "qty": 280,
-        "unit": "g"
+        "display": "280g"
       },
       {
         "name": "Thon au naturel (boîte, égoutté)",
-        "qty": 120,
-        "unit": "g"
+        "display": "120g"
       },
       {
         "name": "Légumes surgelés (mélange)",
-        "qty": 200,
-        "unit": "g"
+        "display": "200g"
       },
       {
         "name": "Huile (olive ou colza)",
-        "qty": 15,
-        "unit": "g"
+        "display": "15g"
       }
     ]
   },
@@ -153,13 +132,11 @@
     "items": [
       {
         "name": "Skyr / fromage blanc 0% (nature)",
-        "qty": 150,
-        "unit": "g"
+        "display": "150g"
       },
       {
         "name": "Miel ou confiture",
-        "qty": 10,
-        "unit": "g"
+        "display": "10g"
       }
     ]
   }

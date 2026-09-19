@@ -41,7 +41,7 @@ function pickNextMeal(meals) {
 function shortItemList(meal, maxItems) {
   return meal.items
     .slice(0, maxItems)
-    .map((item) => `${item.name} ${item.qty}${item.unit}`)
+    .map((item) => `${item.name} ${item.display}`)
     .join(", ");
 }
 
@@ -86,7 +86,7 @@ function buildWidget(meals) {
 
   const maxItems = family === "medium" ? 6 : 4;
   meal.items.slice(0, maxItems).forEach((item) => {
-    const line = widget.addText(`• ${item.name} — ${item.qty}${item.unit}`);
+    const line = widget.addText(`• ${item.name} — ${item.display}`);
     line.font = Font.systemFont(13);
     line.textColor = Color.white();
   });
