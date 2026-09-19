@@ -59,12 +59,14 @@ Le widget va chercher `meals.json` sur GitHub Pages et affiche automatiquement l
 
 ### Un widget "pas" séparé, à côté du repas
 
-Sur l'écran verrouillé, un widget rectangulaire (repas) prend toute la largeur — impossible d'en mettre un deuxième à côté. Pour afficher repas + pas côte à côte, utilise deux widgets **ronds (circulaires)** avec le même script, en changeant juste leur **Paramètre** :
+Pour afficher le repas (en rectangulaire, avec toute la place possible) et les pas côte à côte sur l'écran verrouillé, le plus simple est un **script Scriptable dédié** :
 
-1. Ajoute un premier widget circulaire Scriptable → script "Diète" → laisse le champ **Paramètre** vide (affiche l'heure du prochain repas)
-2. Ajoute un deuxième widget circulaire Scriptable, juste à côté → script "Diète" → dans le champ **Paramètre**, tape **`pas`** (affiche le nombre de pas du jour)
+1. Crée un nouveau script Scriptable, colle le contenu de [`scriptable/pas-widget.js`](scriptable/pas-widget.js), nomme-le **"Pas"**
+2. Sur l'écran verrouillé : garde ton widget "Diète" habituel (rectangulaire), et ajoute à côté un widget Scriptable **rond/circulaire** → script **"Pas"**
 
-Sur l'écran d'accueil (small/medium), un seul widget suffit : il affiche déjà le repas et les pas ensemble.
+Ce script est indépendant de `diete-widget.js` : il lit juste `pas.txt` et affiche le nombre de pas, sans toucher au widget repas existant.
+
+(Alternative plus avancée : `diete-widget.js` accepte aussi un paramètre de widget `pas` pour faire la même chose sans script séparé — voir le commentaire en tête de ce fichier.)
 
 ### Ajouter le nombre de pas (Garmin) au widget
 
