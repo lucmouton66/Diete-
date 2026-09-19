@@ -66,8 +66,6 @@ Pour afficher le repas (en rectangulaire, avec toute la place possible) et les p
 
 Ce script est indépendant de `diete-widget.js` : il lit juste `pas.txt` et affiche le nombre de pas, sans toucher au widget repas existant.
 
-(Alternative plus avancée : `diete-widget.js` accepte aussi un paramètre de widget `pas` pour faire la même chose sans script séparé — voir le commentaire en tête de ce fichier.)
-
 ### Ajouter le nombre de pas (Garmin) au widget
 
 Ni Apple Santé, ni l'app Forme, ni Garmin Connect ne proposent de widget "pas" pour l'écran verrouillé. Solution : un Raccourci (Shortcuts) qui écrit le nombre de pas dans un fichier que le widget Scriptable va lire.
