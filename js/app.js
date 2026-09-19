@@ -28,6 +28,17 @@ function fmt(n, d = 0) {
   return n.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
+function formatQuantity(item, food, roundUp = false) {
+  if (!food.pieceWeight) {
+    return `${fmt(item.qty)}${food.unit}`;
+  }
+  const raw = item.qty / food.pieceWeight;
+  const count = roundUp ? Math.ceil(raw) : Math.round(raw * 2) / 2;
+  const label = count === 1 ? food.pieceName : food.pieceNamePlural;
+  const display = Number.isInteger(count) ? count : `${Math.floor(count)}½`;
+  return `${display} ${label}`;
+}
+
 function timeToMinutes(timeStr) {
   const [h, m] = timeStr.replace("h", ":").split(":").map(Number);
   return h * 60 + (m || 0);
@@ -71,7 +82,7 @@ function renderMealPlan() {
         const m = itemMacros[i];
         return `<li>
           <span class="item-name">${f.name}</span>
-          <span class="item-qty">${item.qty}${f.unit}</span>
+          <span class="item-qty">${formatQuantity(item, f)}</span>
           <span class="item-macro">${fmt(m.kcal)} kcal · P ${fmt(m.p, 1)}g</span>
         </li>`;
       })
@@ -312,8 +323,13 @@ function renderShoppingList() {
     .sort((a, b) => FOODS[b[0]].name.localeCompare(FOODS[a[0]].name))
     .map(([foodKey, qty]) => {
       const f = FOODS[foodKey];
-      const bigUnit = f.unit === "ml" ? "L" : "kg";
-      const display = qty >= 1000 ? `${fmt(qty / 1000, 2)} ${bigUnit}` : `${fmt(qty)} ${f.unit}`;
+      let display;
+      if (f.pieceWeight) {
+        display = formatQuantity({ qty }, f, true);
+      } else {
+        const bigUnit = f.unit === "ml" ? "L" : "kg";
+        display = qty >= 1000 ? `${fmt(qty / 1000, 2)} ${bigUnit}` : `${fmt(qty)} ${f.unit}`;
+      }
       return `<li><span>${f.name}</span><span class="qty">${display} / semaine</span></li>`;
     })
     .join("");
