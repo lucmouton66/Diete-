@@ -45,17 +45,19 @@ function shortItemList(meal, maxItems) {
     .join(", ");
 }
 
-function buildWidget(meals) {
+function buildWidget(weekData) {
   const widget = new ListWidget();
   widget.backgroundColor = new Color("#0f1115");
 
-  if (!meals) {
+  if (!weekData) {
     const errText = widget.addText("Connexion impossible");
     errText.textColor = Color.white();
     errText.font = Font.systemFont(12);
     return widget;
   }
 
+  const todayKey = String(new Date().getDay());
+  const meals = weekData[todayKey];
   const meal = pickNextMeal(meals);
   const family = config.widgetFamily;
 

@@ -54,13 +54,15 @@ function nextMealIndex(meals) {
 // ===================================================================
 // Rendu du plan alimentaire
 // ===================================================================
-function renderMealPlan() {
-  const plan = MEAL_PLAN;
+function renderMealPlan(dayKey) {
+  const todayKey = new Date().getDay();
+  const isToday = dayKey === undefined || dayKey === todayKey;
+  const plan = DAY_PLANS[dayKey === undefined ? todayKey : dayKey];
   const container = document.getElementById("meals-container");
   container.innerHTML = "";
 
   const dayMacros = [];
-  const nextIndex = nextMealIndex(plan.meals);
+  const nextIndex = isToday ? nextMealIndex(plan.meals) : -1;
   let nextCard = null;
 
   plan.meals.forEach((meal, index) => {
@@ -306,15 +308,35 @@ function renderWeightLogTable(sorted) {
 }
 
 // ===================================================================
-// Liste de courses (le même plan répété sur 7 jours)
+// Onglets jour de la semaine
 // ===================================================================
-const DAYS_PER_WEEK = 7;
+function initDayTabs() {
+  const container = document.getElementById("day-tabs");
+  const todayKey = new Date().getDay();
 
+  container.innerHTML = WEEK_ORDER.map(
+    (day) => `<button class="day-tab${day === todayKey ? " active" : ""}" data-day="${day}">${DAY_LABELS[day].slice(0, 3)}</button>`
+  ).join("");
+
+  container.querySelectorAll(".day-tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      container.querySelectorAll(".day-tab").forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+      renderMealPlan(Number(tab.dataset.day));
+    });
+  });
+}
+
+// ===================================================================
+// Liste de courses (somme des 7 vrais jours, variantes comprises)
+// ===================================================================
 function renderShoppingList() {
   const totals = {};
-  MEAL_PLAN.meals.forEach((meal) => {
-    meal.items.forEach((item) => {
-      totals[item.food] = (totals[item.food] || 0) + item.qty * DAYS_PER_WEEK;
+  WEEK_ORDER.forEach((day) => {
+    DAY_PLANS[day].meals.forEach((meal) => {
+      meal.items.forEach((item) => {
+        totals[item.food] = (totals[item.food] || 0) + item.qty;
+      });
     });
   });
 
@@ -356,6 +378,7 @@ function initNav() {
 // ===================================================================
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
+  initDayTabs();
   renderMealPlan();
   initWeightTracker();
   renderShoppingList();
