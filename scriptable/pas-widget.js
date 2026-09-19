@@ -46,27 +46,18 @@ function buildWidget(steps) {
   }
 
   if (family === "accessoryRectangular") {
-    const title = widget.addText("👟 Pas aujourd'hui");
-    title.font = Font.systemFont(11);
-    title.textColor = Color.gray();
-    widget.addSpacer(2);
     const valText = widget.addText(steps !== null ? `${formatNumber(steps)} / ${formatNumber(STEP_GOAL)}` : "—");
-    valText.font = Font.boldSystemFont(15);
+    valText.font = Font.boldSystemFont(16);
     return widget;
   }
 
   // small / medium (écran d'accueil)
-  const title = widget.addText("👟 Pas aujourd'hui");
-  title.font = Font.boldSystemFont(13);
-  title.textColor = new Color("#2ec4b6");
-  widget.addSpacer(8);
-
   const valText = widget.addText(steps !== null ? formatNumber(steps) : "—");
-  valText.font = Font.boldSystemFont(28);
+  valText.font = Font.boldSystemFont(30);
   valText.textColor = Color.white();
 
-  const goalText = widget.addText(`objectif ${formatNumber(STEP_GOAL)}`);
-  goalText.font = Font.systemFont(11);
+  const goalText = widget.addText(`/ ${formatNumber(STEP_GOAL)}`);
+  goalText.font = Font.systemFont(13);
   goalText.textColor = Color.gray();
 
   if (pct !== null) {
