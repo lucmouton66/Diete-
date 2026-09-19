@@ -2,9 +2,13 @@
 // À coller tel quel dans un nouveau script Scriptable (app gratuite, App Store).
 // Fonctionne en widget écran d'accueil (small/medium) et écran verrouillé (accessoryRectangular/circular).
 //
+// Deux modes selon le "Paramètre" du widget (réglable à l'ajout du widget, dans Scriptable) :
+// - vide / "repas" -> affiche le prochain repas (+ les pas s'il y a la place)
+// - "pas"          -> affiche uniquement le nombre de pas (pratique pour un 2e widget à côté)
+//
 // Les pas viennent d'un fichier "pas.txt" écrit par un Raccourci (Shortcuts)
 // dans iCloud Drive/Scriptable/pas.txt — voir README.md pour la mise en place.
-// Si ce fichier n'existe pas encore, le widget affiche juste le repas (aucune erreur).
+// Si ce fichier n'existe pas encore, le widget repas s'affiche quand même (aucune erreur).
 
 const MEALS_URL = "https://lucmouton66.github.io/Diete-/meals.json";
 const STEPS_FILENAME = "pas.txt";
@@ -60,7 +64,48 @@ function pickNextMeal(meals) {
   return { meal: sorted[0], isTomorrow: true };
 }
 
-function buildWidget(meals, steps) {
+function buildStepsWidget(steps) {
+  const widget = new ListWidget();
+  widget.backgroundColor = new Color("#0f1115");
+  const family = config.widgetFamily;
+
+  const value = steps !== null ? formatSteps(steps) : "—";
+
+  if (family === "accessoryCircular") {
+    const stack = widget.addStack();
+    stack.layoutVertically();
+    stack.centerAlignContent();
+    const icon = stack.addText("👟");
+    icon.font = Font.systemFont(14);
+    icon.centerAlignText();
+    const valText = stack.addText(steps !== null ? String(steps) : "—");
+    valText.font = Font.boldSystemFont(13);
+    valText.centerAlignText();
+    return widget;
+  }
+
+  if (family === "accessoryRectangular") {
+    const title = widget.addText("👟 Pas aujourd'hui");
+    title.font = Font.systemFont(11);
+    title.textColor = Color.gray();
+    widget.addSpacer(2);
+    const valText = widget.addText(value);
+    valText.font = Font.boldSystemFont(18);
+    return widget;
+  }
+
+  // small / medium (écran d'accueil)
+  const title = widget.addText("👟 Pas aujourd'hui");
+  title.font = Font.boldSystemFont(13);
+  title.textColor = new Color("#2ec4b6");
+  widget.addSpacer(8);
+  const valText = widget.addText(value);
+  valText.font = Font.boldSystemFont(30);
+  valText.textColor = Color.white();
+  return widget;
+}
+
+function buildMealWidget(meals, steps) {
   const widget = new ListWidget();
   widget.backgroundColor = new Color("#0f1115");
 
@@ -82,7 +127,7 @@ function buildWidget(meals, steps) {
       stack.layoutVertically();
       const timeText = stack.addText(meal.time);
       timeText.font = Font.boldSystemFont(16);
-      const bottomText = stack.addText(steps !== null ? formatSteps(steps) : `${meal.kcal}kcal`);
+      const bottomText = stack.addText(`${meal.kcal}kcal`);
       bottomText.font = Font.systemFont(10);
       return widget;
     }
@@ -141,8 +186,11 @@ function buildWidget(meals, steps) {
   return widget;
 }
 
+const widgetParam = (args.widgetParameter || "").trim().toLowerCase();
+const showStepsOnly = widgetParam === "pas" || widgetParam === "steps";
+
 const [meals, steps] = await Promise.all([getMeals(), getSteps()]);
-const widget = buildWidget(meals, steps);
+const widget = showStepsOnly ? buildStepsWidget(steps) : buildMealWidget(meals, steps);
 
 if (config.runsInWidget) {
   Script.setWidget(widget);

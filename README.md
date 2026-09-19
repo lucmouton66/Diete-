@@ -57,6 +57,15 @@ Pour afficher le prochain repas directement en widget (écran d'accueil ou écra
 
 Le widget va chercher `meals.json` sur GitHub Pages et affiche automatiquement le nom, l'heure et les aliments du prochain repas selon l'heure actuelle.
 
+### Un widget "pas" séparé, à côté du repas
+
+Sur l'écran verrouillé, un widget rectangulaire (repas) prend toute la largeur — impossible d'en mettre un deuxième à côté. Pour afficher repas + pas côte à côte, utilise deux widgets **ronds (circulaires)** avec le même script, en changeant juste leur **Paramètre** :
+
+1. Ajoute un premier widget circulaire Scriptable → script "Diète" → laisse le champ **Paramètre** vide (affiche l'heure du prochain repas)
+2. Ajoute un deuxième widget circulaire Scriptable, juste à côté → script "Diète" → dans le champ **Paramètre**, tape **`pas`** (affiche le nombre de pas du jour)
+
+Sur l'écran d'accueil (small/medium), un seul widget suffit : il affiche déjà le repas et les pas ensemble.
+
 ### Ajouter le nombre de pas (Garmin) au widget
 
 Ni Apple Santé, ni l'app Forme, ni Garmin Connect ne proposent de widget "pas" pour l'écran verrouillé. Solution : un Raccourci (Shortcuts) qui écrit le nombre de pas dans un fichier que le widget Scriptable va lire.
