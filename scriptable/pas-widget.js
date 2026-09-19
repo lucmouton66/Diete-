@@ -4,6 +4,7 @@
 // écrit par le Raccourci "MAJ Pas" (voir README.md du projet Diete-).
 
 const STEPS_FILENAME = "pas.txt";
+const STEP_GOAL = 10000;
 
 async function getSteps() {
   try {
@@ -21,26 +22,26 @@ async function getSteps() {
   }
 }
 
-function formatSteps(steps) {
-  return steps.toLocaleString("fr-FR");
+function formatNumber(n) {
+  return n.toLocaleString("fr-FR");
 }
 
 function buildWidget(steps) {
   const widget = new ListWidget();
   widget.backgroundColor = new Color("#0f1115");
   const family = config.widgetFamily;
-  const value = steps !== null ? formatSteps(steps) : "—";
+  const pct = steps !== null ? Math.min(100, Math.round((steps / STEP_GOAL) * 100)) : null;
 
   if (family === "accessoryCircular") {
     const stack = widget.addStack();
     stack.layoutVertically();
     stack.centerAlignContent();
-    const icon = stack.addText("👟");
-    icon.font = Font.systemFont(14);
-    icon.centerAlignText();
-    const valText = stack.addText(steps !== null ? String(steps) : "—");
-    valText.font = Font.boldSystemFont(13);
+    const valText = stack.addText(pct !== null ? `${pct}%` : "—");
+    valText.font = Font.boldSystemFont(16);
     valText.centerAlignText();
+    const icon = stack.addText("👟");
+    icon.font = Font.systemFont(11);
+    icon.centerAlignText();
     return widget;
   }
 
@@ -49,8 +50,8 @@ function buildWidget(steps) {
     title.font = Font.systemFont(11);
     title.textColor = Color.gray();
     widget.addSpacer(2);
-    const valText = widget.addText(value);
-    valText.font = Font.boldSystemFont(18);
+    const valText = widget.addText(steps !== null ? `${formatNumber(steps)} / ${formatNumber(STEP_GOAL)}` : "—");
+    valText.font = Font.boldSystemFont(15);
     return widget;
   }
 
@@ -59,9 +60,31 @@ function buildWidget(steps) {
   title.font = Font.boldSystemFont(13);
   title.textColor = new Color("#2ec4b6");
   widget.addSpacer(8);
-  const valText = widget.addText(value);
-  valText.font = Font.boldSystemFont(30);
+
+  const valText = widget.addText(steps !== null ? formatNumber(steps) : "—");
+  valText.font = Font.boldSystemFont(28);
   valText.textColor = Color.white();
+
+  const goalText = widget.addText(`objectif ${formatNumber(STEP_GOAL)}`);
+  goalText.font = Font.systemFont(11);
+  goalText.textColor = Color.gray();
+
+  if (pct !== null) {
+    widget.addSpacer(8);
+    const barBg = widget.addStack();
+    barBg.backgroundColor = new Color("#22262f");
+    barBg.cornerRadius = 4;
+    barBg.size = new Size(0, 8);
+    const barFillWrap = barBg.addStack();
+    barFillWrap.layoutHorizontally();
+    const fillWidth = 140 * (pct / 100);
+    const barFill = barFillWrap.addStack();
+    barFill.backgroundColor = new Color("#2ec4b6");
+    barFill.cornerRadius = 4;
+    barFill.size = new Size(fillWidth, 8);
+    barFillWrap.addSpacer();
+  }
+
   return widget;
 }
 
