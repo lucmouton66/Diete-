@@ -57,6 +57,28 @@ Pour afficher le prochain repas directement en widget (écran d'accueil ou écra
 
 Le widget va chercher `meals.json` sur GitHub Pages et affiche automatiquement le nom, l'heure et les aliments du prochain repas selon l'heure actuelle.
 
+### Ajouter le nombre de pas (Garmin) au widget
+
+Ni Apple Santé, ni l'app Forme, ni Garmin Connect ne proposent de widget "pas" pour l'écran verrouillé. Solution : un Raccourci (Shortcuts) qui écrit le nombre de pas dans un fichier que le widget Scriptable va lire.
+
+1. Ouvre l'app **Raccourcis**, onglet **Raccourcis** → **+** pour en créer un nouveau
+2. Ajoute une action : cherche **"pas"** dans la liste (catégorie Santé) → choisis l'action qui donne le nombre de pas, règle la période sur **"Aujourd'hui"**
+3. Ajoute l'action **"Enregistrer le fichier"** :
+   - Contenu = la variable renvoyée par l'action précédente (le nombre de pas)
+   - Emplacement = **iCloud Drive → Scriptable** → nomme le fichier **`pas.txt`**
+   - Active **"Écraser si un fichier existe"**
+4. Renomme le raccourci **"MAJ Pas"** et sauvegarde
+
+Pour que ça se mette à jour automatiquement, ajoute une automatisation :
+
+5. Onglet **Automatisation** → **Créer une automatisation personnelle** → **Heure de la journée**
+6. Choisis un horaire (ex: 12h00), répète tous les jours
+7. Ajoute l'action **"Exécuter le raccourci"** → sélectionne **"MAJ Pas"**
+8. Désactive **"Demander avant l'exécution"** pour que ça tourne sans confirmation
+9. Répète l'opération pour créer 2-3 automatisations à d'autres horaires (ex: 9h, 16h, 21h) si tu veux un chiffre plus à jour dans la journée
+
+Une fois `pas.txt` créé au moins une fois (lance "MAJ Pas" manuellement pour tester), le widget Scriptable affiche automatiquement "👟 X pas" à côté du prochain repas — pas besoin de republier le script.
+
 ## Structure du projet
 
 ```

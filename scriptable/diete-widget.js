@@ -1,8 +1,13 @@
-// Widget "Prochain repas" — Prise de Masse
+// Widget "Prochain repas + Pas" — Prise de Masse
 // À coller tel quel dans un nouveau script Scriptable (app gratuite, App Store).
 // Fonctionne en widget écran d'accueil (small/medium) et écran verrouillé (accessoryRectangular/circular).
+//
+// Les pas viennent d'un fichier "pas.txt" écrit par un Raccourci (Shortcuts)
+// dans iCloud Drive/Scriptable/pas.txt — voir README.md pour la mise en place.
+// Si ce fichier n'existe pas encore, le widget affiche juste le repas (aucune erreur).
 
 const MEALS_URL = "https://lucmouton66.github.io/Diete-/meals.json";
+const STEPS_FILENAME = "pas.txt";
 
 function timeToMinutes(timeStr) {
   // "12h30" -> 750
@@ -21,6 +26,26 @@ async function getMeals() {
   }
 }
 
+async function getSteps() {
+  try {
+    const fm = FileManager.iCloud();
+    const path = fm.joinPath(fm.documentsDirectory(), STEPS_FILENAME);
+    if (!fm.fileExists(path)) return null;
+    if (!fm.isFileDownloaded(path)) {
+      await fm.downloadFileFromiCloud(path);
+    }
+    const raw = fm.readString(path).trim();
+    const steps = parseInt(raw.replace(/\s/g, ""), 10);
+    return isNaN(steps) ? null : steps;
+  } catch (e) {
+    return null;
+  }
+}
+
+function formatSteps(steps) {
+  return steps.toLocaleString("fr-FR");
+}
+
 function pickNextMeal(meals) {
   const now = new Date();
   const nowMinutes = now.getHours() * 60 + now.getMinutes();
@@ -35,7 +60,7 @@ function pickNextMeal(meals) {
   return { meal: sorted[0], isTomorrow: true };
 }
 
-function buildWidget(meals) {
+function buildWidget(meals, steps) {
   const widget = new ListWidget();
   widget.backgroundColor = new Color("#0f1115");
 
@@ -48,6 +73,7 @@ function buildWidget(meals) {
 
   const { meal, isTomorrow } = pickNextMeal(meals);
   const family = config.widgetFamily;
+  const stepsLine = steps !== null ? `👟 ${formatSteps(steps)} pas` : null;
 
   if (family === "accessoryRectangular" || family === "accessoryCircular") {
     // Widget écran verrouillé — version condensée
@@ -56,8 +82,8 @@ function buildWidget(meals) {
       stack.layoutVertically();
       const timeText = stack.addText(meal.time);
       timeText.font = Font.boldSystemFont(16);
-      const kcalText = stack.addText(`${meal.kcal}kcal`);
-      kcalText.font = Font.systemFont(10);
+      const bottomText = stack.addText(steps !== null ? formatSteps(steps) : `${meal.kcal}kcal`);
+      bottomText.font = Font.systemFont(10);
       return widget;
     }
     const title = widget.addText(isTomorrow ? "Demain" : "Prochain repas");
@@ -66,6 +92,11 @@ function buildWidget(meals) {
     widget.addSpacer(2);
     const nameLine = widget.addText(`${meal.name} · ${meal.time}`);
     nameLine.font = Font.boldSystemFont(14);
+    if (stepsLine) {
+      widget.addSpacer(2);
+      const stepsText = widget.addText(stepsLine);
+      stepsText.font = Font.systemFont(12);
+    }
     return widget;
   }
 
@@ -99,12 +130,19 @@ function buildWidget(meals) {
     line.textColor = Color.lightGray();
   });
 
+  if (stepsLine) {
+    widget.addSpacer(8);
+    const stepsText = widget.addText(stepsLine);
+    stepsText.font = Font.boldSystemFont(12);
+    stepsText.textColor = new Color("#2ec4b6");
+  }
+
   widget.url = "https://lucmouton66.github.io/Diete-/";
   return widget;
 }
 
-const meals = await getMeals();
-const widget = buildWidget(meals);
+const [meals, steps] = await Promise.all([getMeals(), getSteps()]);
+const widget = buildWidget(meals, steps);
 
 if (config.runsInWidget) {
   Script.setWidget(widget);
