@@ -45,7 +45,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 853,
+      "kcal": 846,
       "items": [
         {
           "name": "Riz (cru)",
@@ -60,7 +60,7 @@
           "display": "45g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "100g"
         },
         {
@@ -110,19 +110,23 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 477,
+      "kcal": 503,
       "items": [
         {
-          "name": "Saumon (cuit)",
+          "name": "Escalope de dinde (cuite)",
           "display": "90g"
         },
         {
           "name": "Pomme de terre (cuite)",
-          "display": "260g"
+          "display": "300g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "200g"
+        },
+        {
+          "name": "Huile (olive ou colza)",
+          "display": "8g"
         }
       ]
     },
@@ -188,7 +192,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 875,
+      "kcal": 864,
       "items": [
         {
           "name": "Riz (cru)",
@@ -199,7 +203,7 @@
           "display": "55g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "150g"
         },
         {
@@ -331,7 +335,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 875,
+      "kcal": 864,
       "items": [
         {
           "name": "Riz (cru)",
@@ -342,7 +346,7 @@
           "display": "55g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "150g"
         },
         {
@@ -474,7 +478,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 875,
+      "kcal": 864,
       "items": [
         {
           "name": "Riz (cru)",
@@ -485,7 +489,7 @@
           "display": "55g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "150g"
         },
         {
@@ -617,10 +621,10 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 899,
+      "kcal": 845,
       "items": [
         {
-          "name": "Pâtes (crues)",
+          "name": "Pâtes complètes (crues)",
           "display": "190g"
         },
         {
@@ -628,7 +632,7 @@
           "display": "55g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "150g"
         },
         {
@@ -760,10 +764,10 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 899,
+      "kcal": 845,
       "items": [
         {
-          "name": "Pâtes (crues)",
+          "name": "Pâtes complètes (crues)",
           "display": "190g"
         },
         {
@@ -771,7 +775,7 @@
           "display": "55g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "150g"
         },
         {
@@ -903,7 +907,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 853,
+      "kcal": 846,
       "items": [
         {
           "name": "Riz (cru)",
@@ -918,7 +922,7 @@
           "display": "45g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "100g"
         },
         {
@@ -968,19 +972,23 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 477,
+      "kcal": 503,
       "items": [
         {
-          "name": "Saumon (cuit)",
+          "name": "Escalope de dinde (cuite)",
           "display": "90g"
         },
         {
           "name": "Pomme de terre (cuite)",
-          "display": "260g"
+          "display": "300g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
+          "name": "Courgette et poivron (frais)",
           "display": "200g"
+        },
+        {
+          "name": "Huile (olive ou colza)",
+          "display": "8g"
         }
       ]
     },
