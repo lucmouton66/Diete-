@@ -37,10 +37,10 @@ const BREAKFAST = {
   time: "7h00",
   items: [
     { food: "oats", qty: 100 },
-    { food: "milk", qty: 330 },
+    { food: "milk", qty: 300 },
     { food: "eggs", qty: 100 },
-    { food: "banana", qty: 120 },
-    { food: "peanutbutter", qty: 20 },
+    { food: "banana", qty: 100 },
+    { food: "peanutbutter", qty: 15 },
   ],
   note: "3-4 min : flocons + lait chaud au micro-ondes (2 min), 2 œufs à la poêle en même temps.",
 };
@@ -50,7 +50,7 @@ const MORNING_SNACK = {
   time: "10h00",
   items: [
     { food: "skyr", qty: 150 },
-    { food: "peanutbutter", qty: 15 },
+    { food: "peanutbutter", qty: 10 },
   ],
   note: "Zéro cuisson, à emporter facilement (pot de skyr + cuillère de beurre de cacahuète).",
 };
@@ -60,8 +60,8 @@ const PRE_WORKOUT_SNACK = {
   time: "16h00",
   items: [
     { food: "oats", qty: 30 },
-    { food: "milk", qty: 250 },
-    { food: "apple", qty: 200 },
+    { food: "milk", qty: 200 },
+    { food: "apple", qty: 150 },
   ],
   note: "Zéro cuisson : flocons + lait froid (pas besoin de chauffer) + une pomme.",
 };
@@ -71,8 +71,8 @@ const POST_WORKOUT_SHAKE = {
   time: "18h30",
   items: [
     { food: "whey", qty: 25 },
-    { food: "banana", qty: 160 },
-    { food: "honey", qty: 15 },
+    { food: "banana", qty: 120 },
+    { food: "honey", qty: 10 },
   ],
   note: "Zéro cuisson, 1 min chrono : whey + eau dans le shaker, banane à côté. Les jours sans entraînement, prends-le simplement en collation à la même heure.",
 };
@@ -82,7 +82,7 @@ const BEFORE_BED = {
   time: "22h00",
   items: [
     { food: "skyr", qty: 150 },
-    { food: "honey", qty: 10 },
+    { food: "honey", qty: 5 },
   ],
   note: "Zéro cuisson. Protéine lente pour la nuit (récupération musculaire pendant le sommeil).",
 };
@@ -98,10 +98,10 @@ const LUNCH_VARIANTS = {
     name: "Déjeuner",
     time: "12h30",
     items: [
-      { food: "rice", qty: 185 },
+      { food: "rice", qty: 165 },
       { food: "chicken", qty: 80 },
       { food: "veggies", qty: 150 },
-      { food: "oliveoil", qty: 15 },
+      { food: "oliveoil", qty: 10 },
     ],
     note: "Cuis le riz + le poulet en grande quantité 1-2x/semaine (dimanche + mercredi par ex.), garde au frigo en tupperware : ici juste 2 min de micro-ondes. Légumes surgelés directement à la poêle/micro-ondes, pas de découpe.",
   },
@@ -109,10 +109,10 @@ const LUNCH_VARIANTS = {
     name: "Déjeuner",
     time: "12h30",
     items: [
-      { food: "pasta", qty: 190 },
+      { food: "pasta", qty: 165 },
       { food: "groundbeef5", qty: 90 },
       { food: "veggies", qty: 150 },
-      { food: "oliveoil", qty: 10 },
+      { food: "oliveoil", qty: 8 },
     ],
     note: "Pâtes cuites 8-10 min, steak haché à la poêle 5 min pendant ce temps-là — le repas le plus rapide de la semaine.",
   },
@@ -120,11 +120,11 @@ const LUNCH_VARIANTS = {
     name: "Déjeuner",
     time: "12h30",
     items: [
-      { food: "rice", qty: 140 },
-      { food: "lentils", qty: 220 },
+      { food: "rice", qty: 120 },
+      { food: "lentils", qty: 190 },
       { food: "chicken", qty: 70 },
       { food: "veggies", qty: 100 },
-      { food: "oliveoil", qty: 10 },
+      { food: "oliveoil", qty: 8 },
     ],
     note: "Version week-end, un peu plus longue à préparer (riz + lentilles + poulet) — profites-en quand t'as plus de temps devant toi.",
   },
@@ -135,10 +135,10 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "potato", qty: 280 },
+      { food: "potato", qty: 250 },
       { food: "tuna", qty: 120 },
       { food: "veggies", qty: 200 },
-      { food: "oliveoil", qty: 15 },
+      { food: "oliveoil", qty: 10 },
     ],
     note: "Version zéro cuisson : pommes de terre déjà cuites en lot (ou riz restant du déjeuner) + thon en boîte + légumes surgelés réchauffés.",
   },
@@ -146,10 +146,10 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "rice", qty: 70 },
+      { food: "rice", qty: 60 },
       { food: "tuna", qty: 130 },
       { food: "veggies", qty: 200 },
-      { food: "oliveoil", qty: 15 },
+      { food: "oliveoil", qty: 10 },
     ],
     note: "Reste de riz du déjeuner + thon en boîte + légumes surgelés — 5 minutes chrono.",
   },
@@ -157,8 +157,8 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "salmon", qty: 140 },
-      { food: "potato", qty: 250 },
+      { food: "salmon", qty: 130 },
+      { food: "potato", qty: 220 },
       { food: "veggies", qty: 200 },
     ],
     note: "Petit plaisir du week-end : pavé de saumon au four (15-20 min) ou à la poêle (8-10 min).",

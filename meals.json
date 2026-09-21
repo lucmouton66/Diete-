@@ -3,7 +3,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 910,
+      "kcal": 848,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -11,7 +11,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "330ml"
+          "display": "300ml"
         },
         {
           "name": "Œufs entiers",
@@ -23,14 +23,14 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "20g"
+          "display": "15g"
         }
       ]
     },
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 183,
+      "kcal": 153,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -38,22 +38,22 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 981,
+      "kcal": 859,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "140g"
+          "display": "120g"
         },
         {
           "name": "Lentilles corail (cuites)",
-          "display": "220g"
+          "display": "190g"
         },
         {
           "name": "Blanc/cuisse de poulet (cuit)",
@@ -65,14 +65,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "8g"
         }
       ]
     },
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 334,
+      "kcal": 285,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -80,7 +80,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "250ml"
+          "display": "200ml"
         },
         {
           "name": "Pomme",
@@ -91,7 +91,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 283,
+      "kcal": 232,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -99,26 +99,26 @@
         },
         {
           "name": "Banane",
-          "display": "1½ bananes"
+          "display": "1 banane"
         },
         {
           "name": "Miel ou confiture",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 573,
+      "kcal": 526,
       "items": [
         {
           "name": "Saumon (cuit)",
-          "display": "140g"
+          "display": "130g"
         },
         {
           "name": "Pomme de terre (cuite)",
-          "display": "250g"
+          "display": "220g"
         },
         {
           "name": "Légumes surgelés (mélange)",
@@ -129,7 +129,7 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 125,
+      "kcal": 110,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -137,7 +137,7 @@
         },
         {
           "name": "Miel ou confiture",
-          "display": "10g"
+          "display": "5g"
         }
       ]
     }
@@ -146,7 +146,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 910,
+      "kcal": 848,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -154,7 +154,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "330ml"
+          "display": "300ml"
         },
         {
           "name": "Œufs entiers",
@@ -166,14 +166,14 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "20g"
+          "display": "15g"
         }
       ]
     },
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 183,
+      "kcal": 153,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -181,18 +181,18 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 960,
+      "kcal": 846,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "185g"
+          "display": "165g"
         },
         {
           "name": "Blanc/cuisse de poulet (cuit)",
@@ -204,14 +204,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 334,
+      "kcal": 285,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -219,7 +219,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "250ml"
+          "display": "200ml"
         },
         {
           "name": "Pomme",
@@ -230,7 +230,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 283,
+      "kcal": 232,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -238,22 +238,22 @@
         },
         {
           "name": "Banane",
-          "display": "1½ bananes"
+          "display": "1 banane"
         },
         {
           "name": "Miel ou confiture",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 579,
+      "kcal": 509,
       "items": [
         {
           "name": "Pomme de terre (cuite)",
-          "display": "280g"
+          "display": "250g"
         },
         {
           "name": "Thon au naturel (boîte, égoutté)",
@@ -265,14 +265,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 125,
+      "kcal": 110,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -280,7 +280,7 @@
         },
         {
           "name": "Miel ou confiture",
-          "display": "10g"
+          "display": "5g"
         }
       ]
     }
@@ -289,7 +289,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 910,
+      "kcal": 848,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -297,7 +297,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "330ml"
+          "display": "300ml"
         },
         {
           "name": "Œufs entiers",
@@ -309,14 +309,14 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "20g"
+          "display": "15g"
         }
       ]
     },
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 183,
+      "kcal": 153,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -324,18 +324,18 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 960,
+      "kcal": 846,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "185g"
+          "display": "165g"
         },
         {
           "name": "Blanc/cuisse de poulet (cuit)",
@@ -347,14 +347,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 334,
+      "kcal": 285,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -362,7 +362,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "250ml"
+          "display": "200ml"
         },
         {
           "name": "Pomme",
@@ -373,7 +373,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 283,
+      "kcal": 232,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -381,22 +381,22 @@
         },
         {
           "name": "Banane",
-          "display": "1½ bananes"
+          "display": "1 banane"
         },
         {
           "name": "Miel ou confiture",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 579,
+      "kcal": 509,
       "items": [
         {
           "name": "Pomme de terre (cuite)",
-          "display": "280g"
+          "display": "250g"
         },
         {
           "name": "Thon au naturel (boîte, égoutté)",
@@ -408,14 +408,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 125,
+      "kcal": 110,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -423,7 +423,7 @@
         },
         {
           "name": "Miel ou confiture",
-          "display": "10g"
+          "display": "5g"
         }
       ]
     }
@@ -432,7 +432,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 910,
+      "kcal": 848,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -440,7 +440,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "330ml"
+          "display": "300ml"
         },
         {
           "name": "Œufs entiers",
@@ -452,14 +452,14 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "20g"
+          "display": "15g"
         }
       ]
     },
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 183,
+      "kcal": 153,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -467,18 +467,18 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 960,
+      "kcal": 846,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "185g"
+          "display": "165g"
         },
         {
           "name": "Blanc/cuisse de poulet (cuit)",
@@ -490,14 +490,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 334,
+      "kcal": 285,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -505,7 +505,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "250ml"
+          "display": "200ml"
         },
         {
           "name": "Pomme",
@@ -516,7 +516,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 283,
+      "kcal": 232,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -524,22 +524,22 @@
         },
         {
           "name": "Banane",
-          "display": "1½ bananes"
+          "display": "1 banane"
         },
         {
           "name": "Miel ou confiture",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 579,
+      "kcal": 509,
       "items": [
         {
           "name": "Pomme de terre (cuite)",
-          "display": "280g"
+          "display": "250g"
         },
         {
           "name": "Thon au naturel (boîte, égoutté)",
@@ -551,14 +551,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 125,
+      "kcal": 110,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -566,7 +566,7 @@
         },
         {
           "name": "Miel ou confiture",
-          "display": "10g"
+          "display": "5g"
         }
       ]
     }
@@ -575,7 +575,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 910,
+      "kcal": 848,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -583,7 +583,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "330ml"
+          "display": "300ml"
         },
         {
           "name": "Œufs entiers",
@@ -595,14 +595,14 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "20g"
+          "display": "15g"
         }
       ]
     },
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 183,
+      "kcal": 153,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -610,18 +610,18 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 965,
+      "kcal": 854,
       "items": [
         {
           "name": "Pâtes (crues)",
-          "display": "190g"
+          "display": "165g"
         },
         {
           "name": "Steak haché 5% (cuit)",
@@ -633,14 +633,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "8g"
         }
       ]
     },
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 334,
+      "kcal": 285,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -648,7 +648,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "250ml"
+          "display": "200ml"
         },
         {
           "name": "Pomme",
@@ -659,7 +659,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 283,
+      "kcal": 232,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -667,22 +667,22 @@
         },
         {
           "name": "Banane",
-          "display": "1½ bananes"
+          "display": "1 banane"
         },
         {
           "name": "Miel ou confiture",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 592,
+      "kcal": 513,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "70g"
+          "display": "60g"
         },
         {
           "name": "Thon au naturel (boîte, égoutté)",
@@ -694,14 +694,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 125,
+      "kcal": 110,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -709,7 +709,7 @@
         },
         {
           "name": "Miel ou confiture",
-          "display": "10g"
+          "display": "5g"
         }
       ]
     }
@@ -718,7 +718,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 910,
+      "kcal": 848,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -726,7 +726,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "330ml"
+          "display": "300ml"
         },
         {
           "name": "Œufs entiers",
@@ -738,14 +738,14 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "20g"
+          "display": "15g"
         }
       ]
     },
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 183,
+      "kcal": 153,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -753,18 +753,18 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 965,
+      "kcal": 854,
       "items": [
         {
           "name": "Pâtes (crues)",
-          "display": "190g"
+          "display": "165g"
         },
         {
           "name": "Steak haché 5% (cuit)",
@@ -776,14 +776,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "8g"
         }
       ]
     },
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 334,
+      "kcal": 285,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -791,7 +791,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "250ml"
+          "display": "200ml"
         },
         {
           "name": "Pomme",
@@ -802,7 +802,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 283,
+      "kcal": 232,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -810,22 +810,22 @@
         },
         {
           "name": "Banane",
-          "display": "1½ bananes"
+          "display": "1 banane"
         },
         {
           "name": "Miel ou confiture",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 592,
+      "kcal": 513,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "70g"
+          "display": "60g"
         },
         {
           "name": "Thon au naturel (boîte, égoutté)",
@@ -837,14 +837,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 125,
+      "kcal": 110,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -852,7 +852,7 @@
         },
         {
           "name": "Miel ou confiture",
-          "display": "10g"
+          "display": "5g"
         }
       ]
     }
@@ -861,7 +861,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 910,
+      "kcal": 848,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -869,7 +869,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "330ml"
+          "display": "300ml"
         },
         {
           "name": "Œufs entiers",
@@ -881,14 +881,14 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "20g"
+          "display": "15g"
         }
       ]
     },
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 183,
+      "kcal": 153,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -896,22 +896,22 @@
         },
         {
           "name": "Beurre de cacahuète",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 981,
+      "kcal": 859,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "140g"
+          "display": "120g"
         },
         {
           "name": "Lentilles corail (cuites)",
-          "display": "220g"
+          "display": "190g"
         },
         {
           "name": "Blanc/cuisse de poulet (cuit)",
@@ -923,14 +923,14 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "8g"
         }
       ]
     },
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 334,
+      "kcal": 285,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -938,7 +938,7 @@
         },
         {
           "name": "Lait demi-écrémé",
-          "display": "250ml"
+          "display": "200ml"
         },
         {
           "name": "Pomme",
@@ -949,7 +949,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 283,
+      "kcal": 232,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -957,26 +957,26 @@
         },
         {
           "name": "Banane",
-          "display": "1½ bananes"
+          "display": "1 banane"
         },
         {
           "name": "Miel ou confiture",
-          "display": "15g"
+          "display": "10g"
         }
       ]
     },
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 573,
+      "kcal": 526,
       "items": [
         {
           "name": "Saumon (cuit)",
-          "display": "140g"
+          "display": "130g"
         },
         {
           "name": "Pomme de terre (cuite)",
-          "display": "250g"
+          "display": "220g"
         },
         {
           "name": "Légumes surgelés (mélange)",
@@ -987,7 +987,7 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 125,
+      "kcal": 110,
       "items": [
         {
           "name": "Skyr / fromage blanc 0% (nature)",
@@ -995,7 +995,7 @@
         },
         {
           "name": "Miel ou confiture",
-          "display": "10g"
+          "display": "5g"
         }
       ]
     }
