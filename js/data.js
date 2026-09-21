@@ -36,20 +36,20 @@ const BREAKFAST = {
   name: "Petit-déjeuner",
   time: "7h00",
   items: [
-    { food: "oats", qty: 100 },
+    { food: "oats", qty: 110 },
     { food: "milk", qty: 300 },
-    { food: "eggs", qty: 100 },
+    { food: "eggs", qty: 75 },
     { food: "banana", qty: 100 },
     { food: "peanutbutter", qty: 15 },
   ],
-  note: "3-4 min : flocons + lait chaud au micro-ondes (2 min), 2 œufs à la poêle en même temps.",
+  note: "3-4 min : flocons + lait chaud au micro-ondes (2 min), 1½ œuf à la poêle en même temps.",
 };
 
 const MORNING_SNACK = {
   name: "Collation matin",
   time: "10h00",
   items: [
-    { food: "skyr", qty: 150 },
+    { food: "skyr", qty: 120 },
     { food: "peanutbutter", qty: 10 },
   ],
   note: "Zéro cuisson, à emporter facilement (pot de skyr + cuillère de beurre de cacahuète).",
@@ -59,7 +59,7 @@ const PRE_WORKOUT_SNACK = {
   name: "Collation pré-entraînement",
   time: "16h00",
   items: [
-    { food: "oats", qty: 30 },
+    { food: "oats", qty: 40 },
     { food: "milk", qty: 200 },
     { food: "apple", qty: 150 },
   ],
@@ -70,8 +70,8 @@ const POST_WORKOUT_SHAKE = {
   name: "Shaker post-entraînement",
   time: "18h30",
   items: [
-    { food: "whey", qty: 25 },
-    { food: "banana", qty: 120 },
+    { food: "whey", qty: 20 },
+    { food: "banana", qty: 130 },
     { food: "honey", qty: 10 },
   ],
   note: "Zéro cuisson, 1 min chrono : whey + eau dans le shaker, banane à côté. Les jours sans entraînement, prends-le simplement en collation à la même heure.",
@@ -81,8 +81,8 @@ const BEFORE_BED = {
   name: "Avant coucher",
   time: "22h00",
   items: [
-    { food: "skyr", qty: 150 },
-    { food: "honey", qty: 5 },
+    { food: "skyr", qty: 120 },
+    { food: "honey", qty: 10 },
   ],
   note: "Zéro cuisson. Protéine lente pour la nuit (récupération musculaire pendant le sommeil).",
 };
@@ -98,8 +98,8 @@ const LUNCH_VARIANTS = {
     name: "Déjeuner",
     time: "12h30",
     items: [
-      { food: "rice", qty: 165 },
-      { food: "chicken", qty: 80 },
+      { food: "rice", qty: 185 },
+      { food: "chicken", qty: 55 },
       { food: "veggies", qty: 150 },
       { food: "oliveoil", qty: 10 },
     ],
@@ -109,8 +109,8 @@ const LUNCH_VARIANTS = {
     name: "Déjeuner",
     time: "12h30",
     items: [
-      { food: "pasta", qty: 165 },
-      { food: "groundbeef5", qty: 90 },
+      { food: "pasta", qty: 190 },
+      { food: "groundbeef5", qty: 55 },
       { food: "veggies", qty: 150 },
       { food: "oliveoil", qty: 8 },
     ],
@@ -120,9 +120,9 @@ const LUNCH_VARIANTS = {
     name: "Déjeuner",
     time: "12h30",
     items: [
-      { food: "rice", qty: 120 },
-      { food: "lentils", qty: 190 },
-      { food: "chicken", qty: 70 },
+      { food: "rice", qty: 140 },
+      { food: "lentils", qty: 160 },
+      { food: "chicken", qty: 45 },
       { food: "veggies", qty: 100 },
       { food: "oliveoil", qty: 8 },
     ],
@@ -135,8 +135,8 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "potato", qty: 250 },
-      { food: "tuna", qty: 120 },
+      { food: "potato", qty: 280 },
+      { food: "tuna", qty: 85 },
       { food: "veggies", qty: 200 },
       { food: "oliveoil", qty: 10 },
     ],
@@ -146,8 +146,8 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "rice", qty: 60 },
-      { food: "tuna", qty: 130 },
+      { food: "rice", qty: 80 },
+      { food: "tuna", qty: 80 },
       { food: "veggies", qty: 200 },
       { food: "oliveoil", qty: 10 },
     ],
@@ -157,8 +157,8 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "salmon", qty: 130 },
-      { food: "potato", qty: 220 },
+      { food: "salmon", qty: 90 },
+      { food: "potato", qty: 260 },
       { food: "veggies", qty: 200 },
     ],
     note: "Petit plaisir du week-end : pavé de saumon au four (15-20 min) ou à la poêle (8-10 min).",
