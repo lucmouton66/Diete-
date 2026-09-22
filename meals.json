@@ -3,7 +3,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 848,
+      "kcal": 837,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -30,11 +30,11 @@
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 135,
+      "kcal": 150,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Beurre de cacahuète",
@@ -45,7 +45,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 838,
+      "kcal": 831,
       "items": [
         {
           "name": "Riz (cru)",
@@ -56,8 +56,8 @@
           "display": "160g"
         },
         {
-          "name": "Blanc/cuisse de poulet (cuit)",
-          "display": "45g"
+          "name": "Filet de poulet (cru)",
+          "display": "60g"
         },
         {
           "name": "Courgette",
@@ -72,7 +72,7 @@
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 322,
+      "kcal": 318,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -110,15 +110,15 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 510,
+      "kcal": 506,
       "items": [
         {
           "name": "Escalope de dinde (cuite)",
-          "display": "90g"
+          "display": "80g"
         },
         {
           "name": "Pomme de terre (cuite)",
-          "display": "300g"
+          "display": "310g"
         },
         {
           "name": "Courgette",
@@ -137,11 +137,11 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 106,
+      "kcal": 120,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Miel ou confiture",
@@ -154,7 +154,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 848,
+      "kcal": 837,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -181,11 +181,11 @@
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 135,
+      "kcal": 150,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Beurre de cacahuète",
@@ -196,15 +196,15 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 867,
+      "kcal": 861,
       "items": [
         {
           "name": "Riz (cru)",
           "display": "185g"
         },
         {
-          "name": "Blanc/cuisse de poulet (cuit)",
-          "display": "55g"
+          "name": "Filet de poulet (cru)",
+          "display": "75g"
         },
         {
           "name": "Courgette",
@@ -223,7 +223,7 @@
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 322,
+      "kcal": 318,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -284,11 +284,11 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 106,
+      "kcal": 120,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Miel ou confiture",
@@ -301,7 +301,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 848,
+      "kcal": 837,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -328,11 +328,11 @@
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 135,
+      "kcal": 150,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Beurre de cacahuète",
@@ -343,15 +343,15 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 867,
+      "kcal": 861,
       "items": [
         {
           "name": "Riz (cru)",
           "display": "185g"
         },
         {
-          "name": "Blanc/cuisse de poulet (cuit)",
-          "display": "55g"
+          "name": "Filet de poulet (cru)",
+          "display": "75g"
         },
         {
           "name": "Courgette",
@@ -370,7 +370,7 @@
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 322,
+      "kcal": 318,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -431,11 +431,11 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 106,
+      "kcal": 120,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Miel ou confiture",
@@ -448,7 +448,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 848,
+      "kcal": 837,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -475,11 +475,11 @@
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 135,
+      "kcal": 150,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Beurre de cacahuète",
@@ -490,15 +490,15 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 867,
+      "kcal": 861,
       "items": [
         {
           "name": "Riz (cru)",
           "display": "185g"
         },
         {
-          "name": "Blanc/cuisse de poulet (cuit)",
-          "display": "55g"
+          "name": "Filet de poulet (cru)",
+          "display": "75g"
         },
         {
           "name": "Courgette",
@@ -517,7 +517,7 @@
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 322,
+      "kcal": 318,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -578,11 +578,11 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 106,
+      "kcal": 120,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Miel ou confiture",
@@ -595,7 +595,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 848,
+      "kcal": 837,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -622,11 +622,11 @@
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 135,
+      "kcal": 150,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Beurre de cacahuète",
@@ -637,7 +637,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 848,
+      "kcal": 827,
       "items": [
         {
           "name": "Pâtes complètes (crues)",
@@ -664,7 +664,7 @@
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 322,
+      "kcal": 318,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -725,11 +725,11 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 106,
+      "kcal": 120,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Miel ou confiture",
@@ -742,7 +742,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 848,
+      "kcal": 837,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -769,11 +769,11 @@
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 135,
+      "kcal": 150,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Beurre de cacahuète",
@@ -784,7 +784,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 848,
+      "kcal": 827,
       "items": [
         {
           "name": "Pâtes complètes (crues)",
@@ -811,7 +811,7 @@
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 322,
+      "kcal": 318,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -872,11 +872,11 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 106,
+      "kcal": 120,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Miel ou confiture",
@@ -889,7 +889,7 @@
     {
       "name": "Petit-déjeuner",
       "time": "7h00",
-      "kcal": 848,
+      "kcal": 837,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -916,11 +916,11 @@
     {
       "name": "Collation matin",
       "time": "10h00",
-      "kcal": 135,
+      "kcal": 150,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Beurre de cacahuète",
@@ -931,7 +931,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 838,
+      "kcal": 831,
       "items": [
         {
           "name": "Riz (cru)",
@@ -942,8 +942,8 @@
           "display": "160g"
         },
         {
-          "name": "Blanc/cuisse de poulet (cuit)",
-          "display": "45g"
+          "name": "Filet de poulet (cru)",
+          "display": "60g"
         },
         {
           "name": "Courgette",
@@ -958,7 +958,7 @@
     {
       "name": "Collation pré-entraînement",
       "time": "16h00",
-      "kcal": 322,
+      "kcal": 318,
       "items": [
         {
           "name": "Flocons d'avoine",
@@ -996,15 +996,15 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 510,
+      "kcal": 506,
       "items": [
         {
           "name": "Escalope de dinde (cuite)",
-          "display": "90g"
+          "display": "80g"
         },
         {
           "name": "Pomme de terre (cuite)",
-          "display": "300g"
+          "display": "310g"
         },
         {
           "name": "Courgette",
@@ -1023,11 +1023,11 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 106,
+      "kcal": 120,
       "items": [
         {
-          "name": "Skyr / fromage blanc 0% (nature)",
-          "display": "120g"
+          "name": "Skyr nature",
+          "display": "150g"
         },
         {
           "name": "Miel ou confiture",

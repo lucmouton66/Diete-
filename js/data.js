@@ -5,16 +5,16 @@
 // (courses hard-discount / marque distributeur, peu de cuisson)
 // ===================================================================
 const FOODS = {
-  oats:        { name: "Flocons d'avoine",              unit: "g",  kcal: 375, p: 13,   c: 60,  f: 7 },
+  oats:        { name: "Flocons d'avoine",              unit: "g",  kcal: 365, p: 13,   c: 57,  f: 6.8 },
   milk:        { name: "Lait demi-écrémé",               unit: "ml", kcal: 47,  p: 3.3,  c: 4.8, f: 1.6 },
   eggs:        { name: "Œufs entiers",                   unit: "g",  kcal: 155, p: 13,   c: 1.1, f: 11, pieceWeight: 50, pieceName: "œuf", pieceNamePlural: "œufs" },
   banana:      { name: "Banane",                         unit: "g",  kcal: 89,  p: 1.1,  c: 23,  f: 0.3, pieceWeight: 120, pieceName: "banane", pieceNamePlural: "bananes" },
   peanutbutter:{ name: "Beurre de cacahuète",             unit: "g",  kcal: 596, p: 28,   c: 13,  f: 48 },
-  skyr:        { name: "Skyr / fromage blanc 0% (nature)", unit: "g", kcal: 63,  p: 11,   c: 4,   f: 0.2 },
-  rice:        { name: "Riz (cru)",                       unit: "g",  kcal: 350, p: 7.5,  c: 77,  f: 0.9 },
-  pastacomplete: { name: "Pâtes complètes (crues)",       unit: "g",  kcal: 348, p: 14,   c: 66,  f: 2.5 },
+  skyr:        { name: "Skyr nature",                    unit: "g",  kcal: 60,  p: 8.8,  c: 4.8, f: 0.3 },
+  rice:        { name: "Riz (cru)",                       unit: "g",  kcal: 350, p: 7.0,  c: 77,  f: 1.1 },
+  pastacomplete: { name: "Pâtes complètes (crues)",       unit: "g",  kcal: 337, p: 11,   c: 65,  f: 2.0 },
   lentils:     { name: "Lentilles corail (cuites)",       unit: "g",  kcal: 116, p: 9,    c: 20,  f: 0.4 },
-  chicken:     { name: "Blanc/cuisse de poulet (cuit)",    unit: "g",  kcal: 165, p: 31,   c: 0,   f: 3.6 },
+  chicken:     { name: "Filet de poulet (cru)",           unit: "g",  kcal: 113, p: 23,   c: 0,   f: 2.3 },
   groundbeef5: { name: "Steak haché 5% (cuit)",           unit: "g",  kcal: 137, p: 21,   c: 0,   f: 5 },
   turkey:      { name: "Escalope de dinde (cuite)",       unit: "g",  kcal: 135, p: 29,   c: 0,   f: 1.5 },
   tuna:        { name: "Thon au naturel (boîte, égoutté)", unit: "g", kcal: 116, p: 26,   c: 0,   f: 1 },
@@ -51,7 +51,7 @@ const MORNING_SNACK = {
   name: "Collation matin",
   time: "10h00",
   items: [
-    { food: "skyr", qty: 120 },
+    { food: "skyr", qty: 150 },
     { food: "peanutbutter", qty: 10 },
   ],
   note: "Zéro cuisson, à emporter facilement (pot de skyr + cuillère de beurre de cacahuète).",
@@ -83,7 +83,7 @@ const BEFORE_BED = {
   name: "Avant coucher",
   time: "22h00",
   items: [
-    { food: "skyr", qty: 120 },
+    { food: "skyr", qty: 150 },
     { food: "honey", qty: 10 },
   ],
   note: "Zéro cuisson. Protéine lente pour la nuit (récupération musculaire pendant le sommeil).",
@@ -101,12 +101,12 @@ const LUNCH_VARIANTS = {
     time: "12h30",
     items: [
       { food: "rice", qty: 185 },
-      { food: "chicken", qty: 55 },
+      { food: "chicken", qty: 75 },
       { food: "courgette", qty: 100 },
       { food: "poivron", qty: 75 },
       { food: "oliveoil", qty: 10 },
     ],
-    note: "Cuis le riz + le poulet en grande quantité 1-2x/semaine (dimanche + mercredi par ex.), garde au frigo en tupperware : ici juste 2 min de micro-ondes. Courgette et poivron coupés en dés, à la poêle 5-6 min avec le poulet.",
+    note: "Poulet pesé cru (~75g). Cuis le riz + le poulet en grande quantité 1-2x/semaine (dimanche + mercredi par ex.), garde au frigo en tupperware : ici juste 2 min de micro-ondes. Courgette et poivron coupés en dés, à la poêle 5-6 min avec le poulet.",
   },
   B: {
     name: "Déjeuner",
@@ -126,11 +126,11 @@ const LUNCH_VARIANTS = {
     items: [
       { food: "rice", qty: 140 },
       { food: "lentils", qty: 160 },
-      { food: "chicken", qty: 45 },
+      { food: "chicken", qty: 60 },
       { food: "courgette", qty: 100 },
       { food: "oliveoil", qty: 8 },
     ],
-    note: "Version week-end, un peu plus longue à préparer (riz + lentilles + poulet) — profites-en quand t'as plus de temps devant toi.",
+    note: "Poulet pesé cru (~60g). Version week-end, un peu plus longue à préparer (riz + lentilles + poulet) — profites-en quand t'as plus de temps devant toi.",
   },
 };
 
@@ -161,8 +161,8 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "turkey", qty: 90 },
-      { food: "potato", qty: 300 },
+      { food: "turkey", qty: 80 },
+      { food: "potato", qty: 310 },
       { food: "courgette", qty: 200 },
       { food: "poivron", qty: 75 },
       { food: "oliveoil", qty: 8 },
