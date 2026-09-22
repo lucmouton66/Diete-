@@ -45,7 +45,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 846,
+      "kcal": 838,
       "items": [
         {
           "name": "Riz (cru)",
@@ -60,8 +60,8 @@
           "display": "45g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "100g"
+          "name": "Courgette",
+          "display": "½ courgette"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -110,7 +110,7 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 503,
+      "kcal": 510,
       "items": [
         {
           "name": "Escalope de dinde (cuite)",
@@ -121,8 +121,12 @@
           "display": "300g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "200g"
+          "name": "Courgette",
+          "display": "1 courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -192,7 +196,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 864,
+      "kcal": 867,
       "items": [
         {
           "name": "Riz (cru)",
@@ -203,8 +207,12 @@
           "display": "55g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "150g"
+          "name": "Courgette",
+          "display": "½ courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -335,7 +343,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 864,
+      "kcal": 867,
       "items": [
         {
           "name": "Riz (cru)",
@@ -346,8 +354,12 @@
           "display": "55g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "150g"
+          "name": "Courgette",
+          "display": "½ courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -478,7 +490,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 864,
+      "kcal": 867,
       "items": [
         {
           "name": "Riz (cru)",
@@ -489,8 +501,12 @@
           "display": "55g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "150g"
+          "name": "Courgette",
+          "display": "½ courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -621,7 +637,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 845,
+      "kcal": 848,
       "items": [
         {
           "name": "Pâtes complètes (crues)",
@@ -632,8 +648,12 @@
           "display": "55g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "150g"
+          "name": "Courgette",
+          "display": "½ courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -764,7 +784,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 845,
+      "kcal": 848,
       "items": [
         {
           "name": "Pâtes complètes (crues)",
@@ -775,8 +795,12 @@
           "display": "55g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "150g"
+          "name": "Courgette",
+          "display": "½ courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -907,7 +931,7 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 846,
+      "kcal": 838,
       "items": [
         {
           "name": "Riz (cru)",
@@ -922,8 +946,8 @@
           "display": "45g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "100g"
+          "name": "Courgette",
+          "display": "½ courgette"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -972,7 +996,7 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 503,
+      "kcal": 510,
       "items": [
         {
           "name": "Escalope de dinde (cuite)",
@@ -983,8 +1007,12 @@
           "display": "300g"
         },
         {
-          "name": "Courgette et poivron (frais)",
-          "display": "200g"
+          "name": "Courgette",
+          "display": "1 courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",

@@ -14,9 +14,10 @@ function formatDisplay(qty, food) {
     return `${qty}${food.unit}`;
   }
   const raw = qty / food.pieceWeight;
-  const count = Math.round(raw * 2) / 2;
-  const label = count === 1 ? food.pieceName : food.pieceNamePlural;
-  const displayCount = Number.isInteger(count) ? count : `${Math.floor(count)}½`;
+  const count = Math.max(0.5, Math.round(raw * 2) / 2);
+  const label = count <= 1 ? food.pieceName : food.pieceNamePlural;
+  const wholePart = Math.floor(count);
+  const displayCount = Number.isInteger(count) ? count : wholePart === 0 ? "½" : `${wholePart}½`;
   return `${displayCount} ${label}`;
 }
 
