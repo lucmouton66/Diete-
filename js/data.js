@@ -9,7 +9,7 @@ const FOODS = {
   milk:        { name: "Lait demi-écrémé",               unit: "ml", kcal: 47,  p: 3.3,  c: 4.8, f: 1.6 },
   eggs:        { name: "Œufs entiers",                   unit: "g",  kcal: 155, p: 13,   c: 1.1, f: 11, pieceWeight: 50, pieceName: "œuf", pieceNamePlural: "œufs" },
   banana:      { name: "Banane",                         unit: "g",  kcal: 89,  p: 1.1,  c: 23,  f: 0.3, pieceWeight: 120, pieceName: "banane", pieceNamePlural: "bananes" },
-  peanutbutter:{ name: "Beurre de cacahuète",             unit: "g",  kcal: 596, p: 28,   c: 13,  f: 48 },
+  peanutbutter:{ name: "Beurre de cacahuète",             unit: "g",  kcal: 610, p: 28,   c: 13,  f: 48 },
   skyr:        { name: "Skyr nature",                    unit: "g",  kcal: 60,  p: 8.8,  c: 4.8, f: 0.3 },
   rice:        { name: "Riz (cru)",                       unit: "g",  kcal: 350, p: 7.0,  c: 77,  f: 1.1 },
   pastacomplete: { name: "Pâtes complètes (crues)",       unit: "g",  kcal: 337, p: 11,   c: 65,  f: 2.0 },
