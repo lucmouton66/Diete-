@@ -15,8 +15,8 @@ const FOODS = {
   pastacomplete: { name: "Pâtes complètes (crues)",       unit: "g",  kcal: 337, p: 11,   c: 65,  f: 2.0 },
   lentils:     { name: "Lentilles corail (cuites)",       unit: "g",  kcal: 116, p: 9,    c: 20,  f: 0.4 },
   chicken:     { name: "Filet de poulet (cru)",           unit: "g",  kcal: 113, p: 23,   c: 0,   f: 2.3 },
-  groundbeef5: { name: "Steak haché 5% (cuit)",           unit: "g",  kcal: 137, p: 21,   c: 0,   f: 5 },
-  turkey:      { name: "Escalope de dinde (cuite)",       unit: "g",  kcal: 135, p: 29,   c: 0,   f: 1.5 },
+  groundbeef5: { name: "Steak haché 5% (cru)",            unit: "g",  kcal: 121, p: 19,   c: 0,   f: 5.0 },
+  turkey:      { name: "Escalope de dinde (crue)",        unit: "g",  kcal: 100, p: 24,   c: 0,   f: 0.3 },
   tuna:        { name: "Thon au naturel (boîte, égoutté)", unit: "g", kcal: 116, p: 26,   c: 0,   f: 1 },
   potato:      { name: "Pomme de terre (cuite)",           unit: "g", kcal: 87,  p: 2,    c: 20,  f: 0.1 },
   veggies:     { name: "Légumes surgelés (mélange)",       unit: "g",  kcal: 32,  p: 2,    c: 5.5, f: 0.3 },
@@ -25,7 +25,7 @@ const FOODS = {
   oliveoil:    { name: "Huile (olive ou colza)",          unit: "g",  kcal: 884, p: 0,    c: 0,   f: 100 },
   whey:        { name: "Whey Isolate Decathlon (poudre)", unit: "g",  kcal: 379, p: 81,   c: 11,  f: 1 },
   apple:       { name: "Pomme",                           unit: "g",  kcal: 52,  p: 0.3,  c: 14,  f: 0.2, pieceWeight: 180, pieceName: "pomme", pieceNamePlural: "pommes" },
-  honey:       { name: "Miel ou confiture",               unit: "g",  kcal: 304, p: 0.3,  c: 82,  f: 0 },
+  honey:       { name: "Confiture extra framboise",       unit: "g",  kcal: 243, p: 0.6,  c: 58,  f: 0.3 },
 };
 
 // ===================================================================
@@ -113,12 +113,12 @@ const LUNCH_VARIANTS = {
     time: "12h30",
     items: [
       { food: "pastacomplete", qty: 190 },
-      { food: "groundbeef5", qty: 55 },
+      { food: "groundbeef5", qty: 60 },
       { food: "courgette", qty: 100 },
       { food: "poivron", qty: 75 },
       { food: "oliveoil", qty: 8 },
     ],
-    note: "Pâtes complètes cuites 8-10 min, steak haché + courgette/poivron à la poêle 5 min pendant ce temps-là — le repas le plus rapide de la semaine.",
+    note: "Steak haché pesé cru (~60g). Pâtes complètes cuites 8-10 min, steak haché + courgette/poivron à la poêle 5 min pendant ce temps-là — le repas le plus rapide de la semaine.",
   },
   C: {
     name: "Déjeuner",
@@ -161,13 +161,13 @@ const DINNER_VARIANTS = {
     name: "Dîner",
     time: "20h30",
     items: [
-      { food: "turkey", qty: 80 },
+      { food: "turkey", qty: 95 },
       { food: "potato", qty: 310 },
       { food: "courgette", qty: 200 },
       { food: "poivron", qty: 75 },
       { food: "oliveoil", qty: 8 },
     ],
-    note: "Petit changement du week-end : escalope de dinde à la poêle 6-8 min avec la courgette/poivron.",
+    note: "Dinde pesée crue (~95g). Petit changement du week-end : escalope de dinde à la poêle 6-8 min avec la courgette/poivron.",
   },
 };
 

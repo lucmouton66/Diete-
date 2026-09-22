@@ -91,7 +91,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 222,
+      "kcal": 216,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -102,7 +102,7 @@
           "display": "1 banane"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -110,11 +110,11 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 506,
+      "kcal": 493,
       "items": [
         {
-          "name": "Escalope de dinde (cuite)",
-          "display": "80g"
+          "name": "Escalope de dinde (crue)",
+          "display": "95g"
         },
         {
           "name": "Pomme de terre (cuite)",
@@ -137,14 +137,14 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 120,
+      "kcal": 114,
       "items": [
         {
           "name": "Skyr nature",
           "display": "150g"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -242,7 +242,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 222,
+      "kcal": 216,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -253,7 +253,7 @@
           "display": "1 banane"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -284,14 +284,14 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 120,
+      "kcal": 114,
       "items": [
         {
           "name": "Skyr nature",
           "display": "150g"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -389,7 +389,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 222,
+      "kcal": 216,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -400,7 +400,7 @@
           "display": "1 banane"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -431,14 +431,14 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 120,
+      "kcal": 114,
       "items": [
         {
           "name": "Skyr nature",
           "display": "150g"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -536,7 +536,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 222,
+      "kcal": 216,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -547,7 +547,7 @@
           "display": "1 banane"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -578,14 +578,14 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 120,
+      "kcal": 114,
       "items": [
         {
           "name": "Skyr nature",
           "display": "150g"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -637,15 +637,15 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 827,
+      "kcal": 824,
       "items": [
         {
           "name": "Pâtes complètes (crues)",
           "display": "190g"
         },
         {
-          "name": "Steak haché 5% (cuit)",
-          "display": "55g"
+          "name": "Steak haché 5% (cru)",
+          "display": "60g"
         },
         {
           "name": "Courgette",
@@ -683,7 +683,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 222,
+      "kcal": 216,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -694,7 +694,7 @@
           "display": "1 banane"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -725,14 +725,14 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 120,
+      "kcal": 114,
       "items": [
         {
           "name": "Skyr nature",
           "display": "150g"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -784,15 +784,15 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 827,
+      "kcal": 824,
       "items": [
         {
           "name": "Pâtes complètes (crues)",
           "display": "190g"
         },
         {
-          "name": "Steak haché 5% (cuit)",
-          "display": "55g"
+          "name": "Steak haché 5% (cru)",
+          "display": "60g"
         },
         {
           "name": "Courgette",
@@ -830,7 +830,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 222,
+      "kcal": 216,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -841,7 +841,7 @@
           "display": "1 banane"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -872,14 +872,14 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 120,
+      "kcal": 114,
       "items": [
         {
           "name": "Skyr nature",
           "display": "150g"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -977,7 +977,7 @@
     {
       "name": "Shaker post-entraînement",
       "time": "18h30",
-      "kcal": 222,
+      "kcal": 216,
       "items": [
         {
           "name": "Whey Isolate Decathlon (poudre)",
@@ -988,7 +988,7 @@
           "display": "1 banane"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
@@ -996,11 +996,11 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 506,
+      "kcal": 493,
       "items": [
         {
-          "name": "Escalope de dinde (cuite)",
-          "display": "80g"
+          "name": "Escalope de dinde (crue)",
+          "display": "95g"
         },
         {
           "name": "Pomme de terre (cuite)",
@@ -1023,14 +1023,14 @@
     {
       "name": "Avant coucher",
       "time": "22h00",
-      "kcal": 120,
+      "kcal": 114,
       "items": [
         {
           "name": "Skyr nature",
           "display": "150g"
         },
         {
-          "name": "Miel ou confiture",
+          "name": "Confiture extra framboise",
           "display": "10g"
         }
       ]
