@@ -90,110 +90,176 @@ const BEFORE_BED = {
 };
 
 // ===================================================================
-// Variantes du déjeuner et du dîner par groupe de jours
-// A = lundi-mercredi, B = jeudi-vendredi, C = week-end
-// Toutes visent les mêmes macros globales à chaque fois (~960 kcal
-// au déjeuner, ~580 kcal au dîner) avec des aliments différents.
+// Recettes du soir — une recette par jour, cuisinée UNE SEULE FOIS
+// (le soir) et mangée en 2 fois : petite portion au dîner du soir,
+// grande portion au déjeuner du lendemain midi (les restes).
+// Ça permet de ne cuisiner qu'une fois par jour pour 2 repas.
 // ===================================================================
-const LUNCH_VARIANTS = {
-  A: {
-    name: "Déjeuner",
-    time: "12h30",
-    items: [
+const RECIPES = {
+  R1: {
+    label: "Riz + poulet + courgette + poivron",
+    dinner: [
+      { food: "rice", qty: 125 },
+      { food: "chicken", qty: 50 },
+      { food: "courgette", qty: 70 },
+      { food: "poivron", qty: 50 },
+      { food: "oliveoil", qty: 7 },
+    ],
+    lunch: [
       { food: "rice", qty: 185 },
       { food: "chicken", qty: 75 },
       { food: "courgette", qty: 100 },
       { food: "poivron", qty: 75 },
       { food: "oliveoil", qty: 10 },
     ],
-    note: "Poulet pesé cru (~75g). Cuis le riz + le poulet en grande quantité 1-2x/semaine (dimanche + mercredi par ex.), garde au frigo en tupperware : ici juste 2 min de micro-ondes. Courgette et poivron coupés en dés, à la poêle 5-6 min avec le poulet.",
+    note: "Poulet pesé cru. Cuis tout en une fois le soir : garde la plus grosse part au frigo en tupperware pour le lendemain midi.",
   },
-  B: {
-    name: "Déjeuner",
-    time: "12h30",
-    items: [
+  R2: {
+    label: "Pâtes complètes + steak haché + courgette + poivron",
+    dinner: [
+      { food: "pastacomplete", qty: 135 },
+      { food: "groundbeef5", qty: 45 },
+      { food: "courgette", qty: 70 },
+      { food: "poivron", qty: 50 },
+      { food: "oliveoil", qty: 6 },
+    ],
+    lunch: [
       { food: "pastacomplete", qty: 190 },
       { food: "groundbeef5", qty: 60 },
       { food: "courgette", qty: 100 },
       { food: "poivron", qty: 75 },
       { food: "oliveoil", qty: 8 },
     ],
-    note: "Steak haché pesé cru (~60g). Pâtes complètes cuites 8-10 min, steak haché + courgette/poivron à la poêle 5 min pendant ce temps-là — le repas le plus rapide de la semaine.",
+    note: "Steak haché pesé cru. Le repas le plus rapide à cuisiner — pâtes + steak + légumes à la poêle en 10 min, garde la grosse portion pour le lendemain midi.",
   },
-  C: {
-    name: "Déjeuner",
-    time: "12h30",
-    items: [
+  R3: {
+    label: "Pomme de terre + thon + légumes",
+    dinner: [
+      { food: "potato", qty: 280 },
+      { food: "tuna", qty: 85 },
+      { food: "veggies", qty: 200 },
+      { food: "oliveoil", qty: 10 },
+    ],
+    lunch: [
+      { food: "potato", qty: 550 },
+      { food: "tuna", qty: 85 },
+      { food: "veggies", qty: 280 },
+      { food: "oliveoil", qty: 22 },
+    ],
+    note: "Cuis les pommes de terre en une fois (grande quantité), garde au frigo. Thon en boîte ajouté à chaque repas (n'ouvre pas la boîte du lendemain avant).",
+  },
+  R4: {
+    label: "Riz + thon + légumes",
+    dinner: [
+      { food: "rice", qty: 80 },
+      { food: "tuna", qty: 80 },
+      { food: "veggies", qty: 200 },
+      { food: "oliveoil", qty: 10 },
+    ],
+    lunch: [
+      { food: "rice", qty: 170 },
+      { food: "tuna", qty: 90 },
+      { food: "veggies", qty: 280 },
+      { food: "oliveoil", qty: 14 },
+    ],
+    note: "Cuis tout le riz du jour en une fois le soir, garde la grosse part pour le lendemain midi — 5 min chrono à chaque fois.",
+  },
+  R5: {
+    label: "Riz + lentilles + poulet + courgette",
+    dinner: [
+      { food: "rice", qty: 90 },
+      { food: "lentils", qty: 100 },
+      { food: "chicken", qty: 40 },
+      { food: "courgette", qty: 70 },
+      { food: "oliveoil", qty: 6 },
+    ],
+    lunch: [
       { food: "rice", qty: 140 },
       { food: "lentils", qty: 160 },
       { food: "chicken", qty: 60 },
       { food: "courgette", qty: 100 },
       { food: "oliveoil", qty: 8 },
     ],
-    note: "Poulet pesé cru (~60g). Version week-end, un peu plus longue à préparer (riz + lentilles + poulet) — profites-en quand t'as plus de temps devant toi.",
+    note: "Poulet pesé cru. Un peu plus long à préparer (riz + lentilles + poulet) — cuisine tout d'un coup le soir, ça vaut le coup pour 2 repas.",
   },
-};
-
-const DINNER_VARIANTS = {
-  A: {
-    name: "Dîner",
-    time: "20h30",
-    items: [
-      { food: "potato", qty: 280 },
-      { food: "tuna", qty: 85 },
-      { food: "veggies", qty: 200 },
-      { food: "oliveoil", qty: 10 },
-    ],
-    note: "Version zéro cuisson : pommes de terre déjà cuites en lot (ou riz restant du déjeuner) + thon en boîte + légumes surgelés réchauffés.",
-  },
-  B: {
-    name: "Dîner",
-    time: "20h30",
-    items: [
-      { food: "rice", qty: 80 },
-      { food: "tuna", qty: 80 },
-      { food: "veggies", qty: 200 },
-      { food: "oliveoil", qty: 10 },
-    ],
-    note: "Reste de riz du déjeuner + thon en boîte + légumes surgelés — 5 minutes chrono.",
-  },
-  C: {
-    name: "Dîner",
-    time: "20h30",
-    items: [
+  R6: {
+    label: "Dinde + pomme de terre + courgette + poivron",
+    dinner: [
       { food: "turkey", qty: 95 },
       { food: "potato", qty: 310 },
       { food: "courgette", qty: 200 },
       { food: "poivron", qty: 75 },
       { food: "oliveoil", qty: 8 },
     ],
-    note: "Dinde pesée crue (~95g). Petit changement du week-end : escalope de dinde à la poêle 6-8 min avec la courgette/poivron.",
+    lunch: [
+      { food: "turkey", qty: 110 },
+      { food: "potato", qty: 600 },
+      { food: "courgette", qty: 280 },
+      { food: "poivron", qty: 120 },
+      { food: "oliveoil", qty: 14 },
+    ],
+    note: "Dinde pesée crue. Escalope de dinde à la poêle avec la courgette/poivron, pommes de terre cuites en grande quantité à côté.",
+  },
+  R7: {
+    label: "Pâtes complètes + thon + légumes",
+    dinner: [
+      { food: "pastacomplete", qty: 110 },
+      { food: "tuna", qty: 60 },
+      { food: "veggies", qty: 200 },
+      { food: "oliveoil", qty: 8 },
+    ],
+    lunch: [
+      { food: "pastacomplete", qty: 180 },
+      { food: "tuna", qty: 90 },
+      { food: "veggies", qty: 280 },
+      { food: "oliveoil", qty: 15 },
+    ],
+    note: "Cuis toutes les pâtes du jour en une fois le soir, garde la grosse part pour le lendemain midi.",
   },
 };
 
-function buildDay(group) {
+// Quelle recette est cuisinée le soir de chaque jour (clé JS Date().getDay())
+const RECIPE_BY_WEEKDAY = {
+  1: "R1", // lundi
+  2: "R2", // mardi
+  3: "R3", // mercredi
+  4: "R4", // jeudi
+  5: "R5", // vendredi
+  6: "R6", // samedi
+  0: "R7", // dimanche
+};
+
+function buildDay(dayNum) {
+  const todayRecipe = RECIPES[RECIPE_BY_WEEKDAY[dayNum]];
+  const prevRecipe = RECIPES[RECIPE_BY_WEEKDAY[(dayNum + 6) % 7]]; // recette cuisinée la veille au soir
+
+  const lunch = {
+    name: "Déjeuner",
+    time: "12h30",
+    items: prevRecipe.lunch,
+    note: `Restes d'hier soir (${prevRecipe.label}) — juste à réchauffer, rien à cuisiner. ${prevRecipe.note}`,
+  };
+  const dinner = {
+    name: "Dîner",
+    time: "20h30",
+    items: todayRecipe.dinner,
+    note: `${todayRecipe.label}. ${todayRecipe.note}`,
+  };
+
   return {
-    meals: [
-      BREAKFAST,
-      MORNING_SNACK,
-      LUNCH_VARIANTS[group],
-      PRE_WORKOUT_SNACK,
-      POST_WORKOUT_SHAKE,
-      DINNER_VARIANTS[group],
-      BEFORE_BED,
-    ],
+    meals: [BREAKFAST, MORNING_SNACK, lunch, PRE_WORKOUT_SNACK, POST_WORKOUT_SHAKE, dinner, BEFORE_BED],
   };
 }
 
 // Clé JS Date().getDay() : 0=dimanche, 1=lundi, ... 6=samedi
 const DAY_PLANS = {
-  1: buildDay("A"), // lundi
-  2: buildDay("A"), // mardi
-  3: buildDay("A"), // mercredi
-  4: buildDay("B"), // jeudi
-  5: buildDay("B"), // vendredi
-  6: buildDay("C"), // samedi
-  0: buildDay("C"), // dimanche
+  1: buildDay(1), // lundi
+  2: buildDay(2), // mardi
+  3: buildDay(3), // mercredi
+  4: buildDay(4), // jeudi
+  5: buildDay(5), // vendredi
+  6: buildDay(6), // samedi
+  0: buildDay(0), // dimanche
 };
 
 const WEEK_ORDER = [1, 2, 3, 4, 5, 6, 0]; // lundi -> dimanche, pour la liste de courses

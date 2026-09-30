@@ -45,27 +45,27 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 831,
+      "kcal": 841,
       "items": [
         {
-          "name": "Riz (cru)",
-          "display": "140g"
+          "name": "Escalope de dinde (crue)",
+          "display": "110g"
         },
         {
-          "name": "Lentilles corail (cuites)",
-          "display": "160g"
-        },
-        {
-          "name": "Filet de poulet (cru)",
-          "display": "60g"
+          "name": "Pomme de terre (cuite)",
+          "display": "600g"
         },
         {
           "name": "Courgette",
-          "display": "½ courgette"
+          "display": "1½ courgettes"
+        },
+        {
+          "name": "Poivron",
+          "display": "1 poivron"
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "8g"
+          "display": "14g"
         }
       ]
     },
@@ -110,23 +110,19 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 493,
+      "kcal": 575,
       "items": [
         {
-          "name": "Escalope de dinde (crue)",
-          "display": "95g"
+          "name": "Pâtes complètes (crues)",
+          "display": "110g"
         },
         {
-          "name": "Pomme de terre (cuite)",
-          "display": "310g"
+          "name": "Thon au naturel (boîte, égoutté)",
+          "display": "60g"
         },
         {
-          "name": "Courgette",
-          "display": "1 courgette"
-        },
-        {
-          "name": "Poivron",
-          "display": "½ poivron"
+          "name": "Légumes surgelés (mélange)",
+          "display": "200g"
         },
         {
           "name": "Huile (olive ou colza)",
@@ -196,27 +192,23 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 861,
+      "kcal": 933,
       "items": [
         {
-          "name": "Riz (cru)",
-          "display": "185g"
+          "name": "Pâtes complètes (crues)",
+          "display": "180g"
         },
         {
-          "name": "Filet de poulet (cru)",
-          "display": "75g"
+          "name": "Thon au naturel (boîte, égoutté)",
+          "display": "90g"
         },
         {
-          "name": "Courgette",
-          "display": "½ courgette"
-        },
-        {
-          "name": "Poivron",
-          "display": "½ poivron"
+          "name": "Légumes surgelés (mélange)",
+          "display": "280g"
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "15g"
         }
       ]
     },
@@ -261,23 +253,27 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 495,
+      "kcal": 583,
       "items": [
         {
-          "name": "Pomme de terre (cuite)",
-          "display": "280g"
+          "name": "Riz (cru)",
+          "display": "125g"
         },
         {
-          "name": "Thon au naturel (boîte, égoutté)",
-          "display": "85g"
+          "name": "Filet de poulet (cru)",
+          "display": "50g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
-          "display": "200g"
+          "name": "Courgette",
+          "display": "½ courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "7g"
         }
       ]
     },
@@ -408,23 +404,27 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 495,
+      "kcal": 590,
       "items": [
         {
-          "name": "Pomme de terre (cuite)",
-          "display": "280g"
+          "name": "Pâtes complètes (crues)",
+          "display": "135g"
         },
         {
-          "name": "Thon au naturel (boîte, égoutté)",
-          "display": "85g"
+          "name": "Steak haché 5% (cru)",
+          "display": "45g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
-          "display": "200g"
+          "name": "Courgette",
+          "display": "½ courgette"
+        },
+        {
+          "name": "Poivron",
+          "display": "½ poivron"
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "6g"
         }
       ]
     },
@@ -490,15 +490,15 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 861,
+      "kcal": 824,
       "items": [
         {
-          "name": "Riz (cru)",
-          "display": "185g"
+          "name": "Pâtes complètes (crues)",
+          "display": "190g"
         },
         {
-          "name": "Filet de poulet (cru)",
-          "display": "75g"
+          "name": "Steak haché 5% (cru)",
+          "display": "60g"
         },
         {
           "name": "Courgette",
@@ -510,7 +510,7 @@
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "8g"
         }
       ]
     },
@@ -637,27 +637,23 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 824,
+      "kcal": 861,
       "items": [
         {
-          "name": "Pâtes complètes (crues)",
-          "display": "190g"
+          "name": "Pomme de terre (cuite)",
+          "display": "550g"
         },
         {
-          "name": "Steak haché 5% (cru)",
-          "display": "60g"
+          "name": "Thon au naturel (boîte, égoutté)",
+          "display": "85g"
         },
         {
-          "name": "Courgette",
-          "display": "½ courgette"
-        },
-        {
-          "name": "Poivron",
-          "display": "½ poivron"
+          "name": "Légumes surgelés (mélange)",
+          "display": "280g"
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "8g"
+          "display": "22g"
         }
       ]
     },
@@ -784,27 +780,23 @@
     {
       "name": "Déjeuner",
       "time": "12h30",
-      "kcal": 824,
+      "kcal": 913,
       "items": [
         {
-          "name": "Pâtes complètes (crues)",
-          "display": "190g"
+          "name": "Riz (cru)",
+          "display": "170g"
         },
         {
-          "name": "Steak haché 5% (cru)",
-          "display": "60g"
+          "name": "Thon au naturel (boîte, égoutté)",
+          "display": "90g"
         },
         {
-          "name": "Courgette",
-          "display": "½ courgette"
-        },
-        {
-          "name": "Poivron",
-          "display": "½ poivron"
+          "name": "Légumes surgelés (mélange)",
+          "display": "280g"
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "8g"
+          "display": "14g"
         }
       ]
     },
@@ -849,23 +841,27 @@
     {
       "name": "Dîner",
       "time": "20h30",
-      "kcal": 525,
+      "kcal": 541,
       "items": [
         {
           "name": "Riz (cru)",
-          "display": "80g"
+          "display": "90g"
         },
         {
-          "name": "Thon au naturel (boîte, égoutté)",
-          "display": "80g"
+          "name": "Lentilles corail (cuites)",
+          "display": "100g"
         },
         {
-          "name": "Légumes surgelés (mélange)",
-          "display": "200g"
+          "name": "Filet de poulet (cru)",
+          "display": "40g"
+        },
+        {
+          "name": "Courgette",
+          "display": "½ courgette"
         },
         {
           "name": "Huile (olive ou colza)",
-          "display": "10g"
+          "display": "6g"
         }
       ]
     },
